@@ -31,8 +31,8 @@ Watch an overview of the original process here:
 
 ### The guiding principles
 
-- **Getting started is more important than being 100% right.** The Sprint is here to help us adopt a versatile think-prototype-test-learn mindset. This allows us to be agile problem solvers and make better decisions faster.
-- **Learning in the real world consolidates desk research.** A la the Lean Startup approach, we want to validate our ideas with real people really fast.
+- **Getting started is more important than being 100% right.** The Sprint is here to help us adopt a versatile think-prototype-test-learn mindset. This allows us to be agile problem solvers and make better decisions faster.
+- **Learning in the real world consolidates desk research.** A la the Lean Startup approach, we want to validate our ideas with real people really fast.
 - **Tangible results are better than endless discussions.** You'll see the Sprint is really intense and there are no empty conversations. Every time we will talk, comment or discuss, we'll be looking AT something (a sketch, a prototype, an example).
 - **You don't need to be an artist.** Although it's called a **Design** Sprint, you don't need to be an interface design expert. The process allows anyone with any role to come up with great ideas.
 
@@ -40,7 +40,7 @@ Watch an overview of the original process here:
 
 As part of our preparation efforts, everyone in the team has been interviewed and we formulated our problem statement, along with ideas belonging to the problem space. 
 
-**"How Might We... [Metadata Harvesting Services]"**
+**"How Might We service that provides external revenue without affecting our members services and that effectively addresses the needs of its users."**
 
 **This is what we uncovered:**
 
