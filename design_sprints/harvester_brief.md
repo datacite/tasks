@@ -1,6 +1,6 @@
-# [Metadata Harvesting Services] Remote Design Sprint Brief 
+# Metadata Harvesting Services. Remote Design Sprint Brief 
 
-Reading this document is key to our Design Sprint success. Please read it carefully and reach out at youremail@mydomain.com if you have any questions. Thanks!
+Reading this document is key to our Design Sprint success. Please read it carefully and reach out if you have any questions. Thanks!
 
 Welcome everyone! If you're reading this document, it means you're part of our upcoming Remote Design Sprint. Congrats! We're looking at an intense and interesting journey ahead of us and this doc is meant to give you an overview of what to expect. 
 
@@ -10,7 +10,7 @@ Welcome everyone! If you're reading this document, it means you're part of our u
 - Mary
 - Richard
 - Britta 
-- Kristian (Facilitator )
+- Kristian (Facilitator)
 - 
 ### The Focus Group team
 
