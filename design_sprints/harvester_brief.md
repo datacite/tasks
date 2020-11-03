@@ -101,34 +101,38 @@ There are just a few things we ask of you as a preparatory component, outlined h
 
 Yay, you've made it all the way to the end! You're now prepared for our upcoming Remote Design Sprint. Rest assured, you will have guidance along the way â if you have any questions or concerns, please reach out to Kristian over slack. 
 
-### Day 0 - Session Zero (Offline)
+
+### Detailed Agenda
+
+
+#### Day 0 - Session Zero (Offline)
 
 - [ ] User Voice Research. We kick off the DS byt reviewing the User research, this has been gathered by the Focus Group team and include all the information we have about the users so far.
 
 
-### Day 1 - Session One
+#### Day 1 - Session One
 
 - [ ] [Expert Interviews](https://www.youtube.com/watch?v=ZtYp7XzmXr8&t=243s&ab_channel=AJ%26Smart). We make a round with all the participants with their own perspectives of the problems and we collect notes.
 - [ ] [Long Term Goal](https://www.youtube.com/watch?v=OaeKpGJe2To&ab_channel=AJ%26Smart)
 - [ ] [Sprint Questions](https://www.youtube.com/watch?v=OaeKpGJe2To&ab_channel=AJ%26Smart)
 
-### Day 1 - Session Two
+#### Day 1 - Session Two
 
 - [ ] [Drawing Map](https://www.youtube.com/watch?v=JTqCR84fzeg&t=524s&ab_channel=AJ%26Smart). 
 - [ ] [Lighting Demos](https://www.youtube.com/watch?v=1iH9jkJHbs4&ab_channel=AJ%26Smart). Searching for existing ideas you can use in the later to inform your solution. Look with competitors, other industries, within Datacite, and everywhere. Each participant will give a small 3 minute demo of each idea.
 
-### Day 1 - Session three (Offline)
+#### Day 1 - Session three (Offline)
 
 - [ ] [Concept Sketching](https://www.youtube.com/watch?v=TK-94QiEFgw&ab_channel=AJ%26Smart). We all will work independetly to generate a sketch of our potential solution. Using paper and taking pictures with the phone.
 
-### Day 2 - Session Three
+#### Day 2 - Session Three
 
 - [ ] [Concept Voting](https://www.youtube.com/watch?v=YW2ifUTVd_E&ab_channel=AJ%26Smart). We start the session by voting on the most interesting ideas in each concept.
 - [ ] Solution Presentation. Quickly discuss the highlights of each solution, and use sticky notes to capture big ideas.
 - [ ] Straw poll. Here the whole team has the opportunity to suggest the winning concept.
 - [ ] [User Test Flow](https://www.youtube.com/watch?v=y5pSBgQUezQ). On this section, we will figure out what's the user flow in our service.
 
-### Day 2 - Session Four
+#### Day 2 - Session Four
 - [ ] [Story Board](https://www.youtube.com/watch?v=yav4HN26XT8&ab_channel=AJ%26Smart). During this session we will create the sotry board that would be the blue print for the new service.
 
 
