@@ -66,13 +66,13 @@ The Design Sprint schedule looks like this:
 
 The Core Sprint team will be engaged in Day 1 and Day 2. The Product designer will take over on Day 3 and finally, the Focus Group team will conclude on Day 4. Everyone should have received the appropriate calendar invites. If you do not see them, please reach out immediately. 
 
-Day 1 - Nov 1st - Core Sprint Team
+Day 1 -  Core Sprint Team
 
-Day 2 - Nov 2nd - Core Sprint Team
+Day 2 -  Core Sprint Team
 
-Day 3 - Nov 3rd - Product Designer 
+Day 3 -  Product Designer 
 
-Day 4 - TBD - Focus Group team *dates might vary depending on tester availability 
+Day 4 -  Focus Group team *dates might vary depending on tester availability 
 
 ### Where
 
@@ -99,7 +99,7 @@ There are just a few things we ask of you as a preparatory component, outlined h
 
 ### Final remarks
 
-Yay, you've made it all the way to the end! You're now prepared for our upcoming Remote Design Sprint. Rest assured, you will have guidance along the way â if you have any questions or concerns, please reach out to Kristian over slack. 
+Yay, you've made it all the way to the end! You're now prepared for our upcoming Remote Design Sprint. Rest assured, you will have guidance along the way if you have any questions or concerns, please reach out to Kristian over slack. 
 
 
 ### Detailed Agenda
@@ -113,12 +113,12 @@ Yay, you've made it all the way to the end! You're now prepared for our upcoming
 #### Day 1 - Session One
 
 - [ ] [Expert Interviews](https://www.youtube.com/watch?v=ZtYp7XzmXr8&t=243s&ab_channel=AJ%26Smart). We make a round with all the participants with their own perspectives of the problems and we collect notes.
-- [ ] [Long Term Goal](https://www.youtube.com/watch?v=OaeKpGJe2To&ab_channel=AJ%26Smart)
-- [ ] [Sprint Questions](https://www.youtube.com/watch?v=OaeKpGJe2To&ab_channel=AJ%26Smart)
+- [ ] [Long Term Goal](https://www.youtube.com/watch?v=OaeKpGJe2To&ab_channel=AJ%26Smart). Every Design Sprint starts with a vision of the future personified by the long-term goals the organization wants to achieve.
+- [ ] [Sprint Questions](https://www.youtube.com/watch?v=OaeKpGJe2To&ab_channel=AJ%26Smart). Help your team envision the project success AND all possible roadblocks / reasons for failure by asking open-ended questions.
 
 #### Day 1 - Session Two
 
-- [ ] [Drawing Map](https://www.youtube.com/watch?v=JTqCR84fzeg&t=524s&ab_channel=AJ%26Smart). 
+- [ ] [Drawing Map](https://www.youtube.com/watch?v=JTqCR84fzeg&t=524s&ab_channel=AJ%26Smart). We will map out a user’s experience step by step as they encounter your problem space or interact with our product. This method enables the team to get into the mindset of the user and illuminates pain points, identifying opportunities to create new or improved user experiences.
 - [ ] [Lighting Demos](https://www.youtube.com/watch?v=1iH9jkJHbs4&ab_channel=AJ%26Smart). Searching for existing ideas you can use in the later to inform your solution. Look with competitors, other industries, within Datacite, and everywhere. Each participant will give a small 3 minute demo of each idea.
 
 #### Day 1 - Session three (Offline)
