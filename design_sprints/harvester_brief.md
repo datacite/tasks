@@ -11,7 +11,7 @@ Welcome everyone! If you're reading this document, it means you're part of our u
 - Richard
 - Britta 
 - Kristian (Facilitator)
-- 
+
 ### The Focus Group team
 
 - Sarala 
@@ -107,7 +107,7 @@ Yay, you've made it all the way to the end! You're now prepared for our upcoming
 
 #### Day 0 - Session Zero (Offline)
 
-- [ ] User Voice Research. We kick off the DS byt reviewing the User research, this has been gathered by the Focus Group team and include all the information we have about the users so far.
+- [ ] User Voice Research. We kick off the DS byt reviewing the User research, this has been gathered by the Focus Group team and include all the information we have about the users so far. Focus Group [Session 1](https://docs.google.com/document/d/1VtfF5ab6GU9FWBdD0H7iScOudqVsUxYAAYIunceyMPw/edit) and [Session 2](https://docs.google.com/document/d/1pkRhQOWhfKjEvxqJ6c0ASJxaO-1Y4XeQALgaYL-sG-Y/edit#heading=h.cded8372egm4)
 
 
 #### Day 1 - Session One
