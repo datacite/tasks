@@ -38,17 +38,15 @@ Watch an overview of the original process here:
 
 ### The task
 
-As part of our preparation efforts, everyone in the team has been interviewed and we formulated our problem statement, along with ideas belonging to the problem space. 
+As part of our preparation efforts, we formulated our problem statement, along with ideas belonging to the problem space. 
 
 **"How Might We service that provides external revenue without affecting our members services and that effectively addresses the needs of its users."**
 
 **This is what we uncovered:**
 
-- Finding #1 with explanations, ie. "We noticed our customers our leaving our product really quickly after signing up"
-- Finding #2 with explanations,  ie. "Research shows people don't understand what we do and how we're different"
-- Finding #3 with explanations
-- Finding #4 with explanations
-- Finding #5 with explanations
+- Finding #1 Some metadata harvesters put our system under significant stress that might be affecting services used by our members.
+- Finding #2 Many of metadata harvesters are not DataCite members.
+- Finding #3 Our harvesting services are daily used.
 
 ### The expectations
 
