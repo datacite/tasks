@@ -40,7 +40,7 @@ Watch an overview of the original process here:
 
 As part of our preparation efforts, we formulated our problem statement, along with ideas belonging to the problem space. 
 
-**"How Might We service that provides external revenue without affecting our members services and that effectively addresses the needs of its users."**
+**"How can we improve discoverability of our members research outputs by (1) enabling effective harvesting of our metadata and (2) including extra convenience for a paid Harvesting Services."**
 
 **This is what we uncovered:**
 
