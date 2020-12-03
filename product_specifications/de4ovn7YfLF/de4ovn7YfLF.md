@@ -2,9 +2,9 @@
 
 There’s growing interest in finding good ways to report on scholars’ openness. 
 
-We can show the distribution of the data of licenses of the DOIs but that just showing raw data. It is not coveying any information to the Commons visitor. 
+We can show the distribution of the data of licenses of the DOIs but that just showing raw data. It is not coveying any useful information to the Commons visitor. 
 
-Problem/Idea validation: [](https://jlsc-pub.org/articles/abstract/10.7710/2162-3309.1025/)
+Problem/Idea validation: https://jlsc-pub.org/articles/abstract/10.7710/2162-3309.1025/
 
 ## Solution 
 
@@ -15,10 +15,10 @@ Solution validation: [This approach has been pioneered in other researcher profi
 ## User Stories
 
 ### CRITICAL
-- [ ] **As a user**, I .. **So that** ...
+- [ ] **As a user with a profile**, I like that visitors of my profile get an clear idea of about the openess of my research **So that** they can be aware of my level of openess.
 
 ### IMPORTANT
-- [ ] **As a user**, I .. **So that** ...
+- [ ] **As a user with a profile**, I .. **So that** ...
 
 ### NICE-TO-HAVE
 - [ ] **As a user**, I .. **So that** ...
@@ -31,19 +31,7 @@ Once we've confirmed the feature is deemed stable, we remove the feature flag in
 
 ## Non Functional Requirements
 
-- [ ] **As a user**, I .. **So that** ...
+- [ ] **As a user**, I expect the UI to follow the default Commons style and usability.
+- [ ] **As a user**, I expect the that the computation of the degree of openess is consistent and cannot be tampered with, **So that** I can trust the information that it displays.
 
 
-## Planned PRs
-
-### Backend
-
-- [ ] [PR-1 title](PR link if it already exists)
-
-### Frontend
-
-- [ ] [PR-1 title](PR link if it already exists)
-
-### General
-
-- [ ] []()
