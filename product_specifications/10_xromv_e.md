@@ -5,6 +5,8 @@ There is no way to claim DOI and visualize which DOIs have been already claimed 
 
 Problem Validation: 
 
+Addresses: https://github.com/datacite/tasks/issues/26
+
 ## Solution 
 
 Add ORCID Claiming and DOIs claims to DataCite Commons.
@@ -23,7 +25,7 @@ Add ORCID Claiming and DOIs claims to DataCite Commons.
 
 
 ### NICE-TO-HAVE
-[ ] As a logged user, I would like to be able to claim DOIs and add my contributor-role to the Claim to specify my contribution.
+- [ ] As a logged user, I would like to be able to claim DOIs and add my contributor-role to the Claim to specify my contribution.
 - [ ] As a logged user, I would like to be able to claim DOIs directly from the worklist, so I don't need to click to go to the DOI page to claim a DOI.
 
 ## Feature Flag
@@ -39,5 +41,3 @@ Once we've confirmed the feature is deemed stable, we remove the feature flag to
 [ ] As a user, I would like the UI to claim DOIs follow the default Commons style and usability elements.
 - [ ] As a product designer, I would like that the Claiming buttons be visible to the user on arrival to the DOI page so that users do not need to scroll to find the functionality. Insight: More than 60% of the Common's users have a screen resolution that will satisfy requirements then [scroll to see claiming functionality](https://analytics.google.com/analytics/web/#/savedreport/nCDFZOa8SOeOXMQvx90NMw/a22806196w244715860p227694677/_u.date00=20200901&_u.date01=20201125).
 
-
-## Planned PRs
