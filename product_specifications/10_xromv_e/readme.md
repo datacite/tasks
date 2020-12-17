@@ -19,13 +19,8 @@ Add ORCID Claiming and DOIs claims to DataCite Commons.
 - [ ] As a logged user, I would like to see which DOIs I can claim into my ORCID Record so that I can add those DOIs to my ORCID record.
 - [ ] As a logged user, I would like to remove my ORCID claims so that if I make a mistake claiming a DOI, I can correct it.
 - [ ] As a logged user, I would like to be able to claim DOIs into my ORCID record so that I can improve my ORCID record.
-- [ ] As a non-logged user, I would like to see links to the person page of DOIs that have been claimed using search and link so that I can follow through the links.
 - [ ] As a user, I would like to claim the process follows a clear define set of steps, so I don't get confused about the state of my claims.
 
-
-### NICE-TO-HAVE
-- [ ] As a logged user, I would like to be able to claim DOIs and add my contributor-role to the Claim to specify my contribution.
-- [ ] As a logged user, I would like to be able to claim DOIs directly from the worklist, so I don't need to click to go to the DOI page to claim a DOI.
 
 ## Feature Flag
 
