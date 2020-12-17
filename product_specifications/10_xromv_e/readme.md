@@ -35,6 +35,6 @@ Once we've confirmed the feature is deemed stable, we remove the feature flag to
 ## Non Functional Requirements
 
 - [ ] As a logged user, I would like to have a near-instantaneous response on the success of my claiming or unclaiming actions.
-- [ ] As a logged user, I would like that the "Claiming DOI" status had a lifespan of the order of minutes, so I can continue working without worrying about the state of the Claim.
+- [ ] As a logged user, I would like that the "Updating Claim" status had a lifespan of the order of minutes, so I can continue working without worrying about the state of the Claim.
 - [ ] As a user, I would like the UI to claim DOIs follow the default Commons style and usability elements.
 
