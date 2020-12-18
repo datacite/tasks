@@ -31,8 +31,9 @@ Once we've confirmed the feature is deemed stable, we remove the feature flag in
 
 ## Non Functional Requirements
 
-- [ ] **As a user**, I expect the that the computation of the degree of openess is consistent and cannot be tampered with, **So that** I can trust the information that it displays.
-- [ ] **As a product designer**, I would like the badge to use standard icongraphy ehen possible.
+- [ ] **As a user**, I expect that the computation of the degree of openess is consistent and cannot be tampered with, **So that** I can trust the information that it displays.
+- [ ] **As a user**, I expect the badge to appear as soon as the page loads **So that** visitors do not have to wonder what the result of badge computation is.
+- [ ] **As a product designer**, I would like the badge to use standard icongraphy when possible.
   - https://thenounproject.com/search/?q=superhero&i=2227044 open hero, open license
   - https://thenounproject.com/search/?q=open+access&i=3261458 open access
   - https://thenounproject.com/search/?q=science+journal+computational&i=1885778 triatlethe
