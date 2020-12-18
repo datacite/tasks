@@ -1,4 +1,5 @@
-Feature: Open Access Badges
+Feature: Open Access Badges in DataCite Commons
+
         Scenario: Open Hero Badge
             Given that every single one of the researcher associated DOIs have metadata with rights as CC-BY, CC0, or public domain license.
              When visiting the researcher page
@@ -18,3 +19,8 @@ Feature: Open Access Badges
             Given n% of researcher's associated DOIs have metadata with contentUrl accessible without restrictions.
              When visiting the researcher page
              Then Display a "Open Access" Badge on the researcher page
+
+        Scenario: Not Open Access Badge
+            Given that a researchers associated DOIs do not generate any badge
+             When visiting the researcher page
+             Then the whole section of achievements should not be visible
