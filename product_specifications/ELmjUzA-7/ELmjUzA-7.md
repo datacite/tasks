@@ -23,6 +23,10 @@ further details: https://docs.google.com/document/d/1sJUQ_IemyPp0CktKXv_tfa7PhHc
 - [ ] As Staff, I would like that all discipline DOI metadata enrichment is performed via the  OECD subject classification so we can analyze DOI metadata using this controlled vocabulary.
 - [ ] As Staff, I would like to restrict the access to discipline enriched DOI metadata fields to be displayed ONLY via the GraphQL API, so that do not confuse our repositories.
 
+### IMPORTANT
+
+- [ ] As Staff, I would like to encourage, using the earliest open hours session and newsletter, members and clients to add subject discipline using the OECD subject classification in the DOIs metadata, so that we can organically increase the completeness of subject classification in all DOIs metadata.
+
 ## Non Functional Requirements
 
 - [ ] As a user, I expect the UI to add/remove/update discipline metadata to the repository to follow the default Fabrica style and usability.
