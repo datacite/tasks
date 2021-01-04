@@ -3,7 +3,7 @@
 
 A new version of the metadata schema has been released, and we need users to have access to it via our systems.
 
-Problem Validation: [The metadata WG has already work on validating the changes of the Schema](https://wiki.tib.eu/confluence/display/datacite/Agenda)
+Problem Validation: [The metadata WG has already worked on validating the changes of the Schema](https://wiki.tib.eu/confluence/display/datacite/Agenda)
 
 ## Proposed Solution 
 
