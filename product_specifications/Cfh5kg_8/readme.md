@@ -5,6 +5,7 @@ A new version of the metadata schema has been released, and we need users to hav
 
 Problem Validation: [The metadata WG has already worked on validating the changes of the Schema](https://wiki.tib.eu/confluence/display/datacite/Agenda)
 
+closes: https://github.com/datacite/tasks/issues/43
 ## Proposed Solution 
 
 Modify our services to handle schema version 4.4
@@ -14,9 +15,21 @@ Solution Validation: [We have performed all minor changes activities in the past
 ## User Stories
 
 ### CRITICAL
-- [ ] As a user of datacite services, I would like to create/update/retrieve DOI metadata with schema version 4.4 from all applicable datacite services, so that I can manage DOIs with the latest version.
-- [ ]  As a user of datacite services, I would like to have access to an XSD file of the latest version of the Schema so that I can do my schema validation.
-- [ ]  As a user of datacite services, I would like to have access to a JSON schema file of the latest version of the Schema so that I can do my schema validation.
+- [ ] As a user of datacite services, I would like to be able create/update/retrieve DOI metadata with schema version 4.4 from all DataCite APIs, so that I can manage DOIs with the latest version.
+- [ ]  As a user of datacite services, I would like to have access to an XSD file of the 4.4 version of the Schema so that I can do my schema validation.
+- [ ]  As a user of datacite services, I would like to have access to a JSON schema file of the 4.4 version of the Schema so that I can do my schema validation.
+
+### IMPORTANT
+
+- [ ]  As fabrica user, I would like to have access to the new values, schema version 4.4, to the `resourceTypeGeneral` property from the DOI form, so I can select/update  `resourceTypeGeneral`.
+- [ ]  As fabrica user, I would like to have access to the new values,  schema version 4.4 (`isPublishedIn`), to the relationType property from the DOI form, so I can select/update  `relationType`.
+- [ ]  As fabrica user, I would like that when I select a discipline classification in the subject field, the appropiated `classificationCode` were included in the metadata, so that I don't have to do it manually.
+
+
+### NICE TO HAVE
+
+- [ ]  As fabrica user, I would like to add `relatedItem` field via the DOI form, so that  so that I can add/update  Information about a resource related to the one being registered where the related resource does not have an identifier. 
+  - I would suggest do not Add this to the DOI Form on its first release.
 
 
 ## Non Functional Requirements
