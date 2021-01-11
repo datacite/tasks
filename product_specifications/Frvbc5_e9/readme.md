@@ -8,6 +8,8 @@ Problem validation: [This issue has been discussed in the context of FREYA as so
 
 Display a list of the top five co-authors of a particular researcher.
 
+ [WireFrame](https://www.figma.com/file/JZXYSUc6ZofDBlFmUzNHQG/PARSEC_new-features?node-id=0%3A1)
+
  Solution Validation: In our researcher, we have seen this feature is present in many other [researcher profiles](https://docs.google.com/document/d/1tQcBpUOi4kg1Gvluvc3dDvhGaVxi2CpmTxZG4U9W1Vw/edit).
 
 ## User Stories
