@@ -12,6 +12,9 @@ Modify our services to handle schema version 4.4
 
 Solution Validation: [We have performed all minor changes activities in the past](https://github.com/datacite/schema/issues/56)
 
+
+![Fabrica WireFrame](https://www.figma.com/file/4IqpgYiEz3P7VCvBHAfAfJ/schema_44?node-id=0%3A1)
+
 ## User Stories
 
 ### CRITICAL
@@ -29,7 +32,11 @@ Solution Validation: [We have performed all minor changes activities in the past
 ### NICE TO HAVE
 
 - [ ]  As fabrica user, I would like to add `relatedItem` field via the DOI form, so that  so that I can add/update  Information about a resource related to the one being registered where the related resource does not have an identifier. 
-  - I would suggest do not Add this to the DOI Form on its first release.
+
+
+### Detailed User Stories
+
+[Detailed User Stories](detail.feature)
 
 
 ## Non Functional Requirements
