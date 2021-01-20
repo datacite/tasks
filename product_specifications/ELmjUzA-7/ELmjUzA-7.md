@@ -23,6 +23,10 @@ further details: https://docs.google.com/document/d/1sJUQ_IemyPp0CktKXv_tfa7PhHc
 - [ ] As Staff, I would like that all discipline DOI metadata enrichment is performed via the  OECD subject classification so we can analyze DOI metadata using this controlled vocabulary.
 - [ ] As Staff, I would like to restrict the access to discipline enriched DOI metadata fields to be displayed ONLY via the GraphQL API, so that do not confuse our repositories.
 
+## Detailed User Stories
+
+[Detailed User Stories](ELmjUzA-7.feature)
+
 ## Non Functional Requirements
 
 - [ ] As a user, I expect the UI to add/remove/update discipline metadata to the repository to follow the default Fabrica style and usability.

@@ -22,6 +22,10 @@ Add ORCID Claiming and DOIs claims to DataCite Commons.
 - [ ] As a user, I would like to claim the process follows a clear define set of steps, so I don't get confused about the state of my claims.
 
 
+## Detailed User Stories
+
+[Detailed User Stories](detail.feature)
+
 ## Feature Flag
 
 This feature is implemented behind `orcid-claiming` feature flag and disabled by default.

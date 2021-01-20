@@ -34,3 +34,6 @@ Display a list of the top five co-authors of a particular researcher.
 This feature is implemented behind the `top-co-author-list` feature flag and disabled by default.
 Once we've confirmed the feature is deemed stable, we remove the feature flag to publish the feature as GA.
 
+## Detailed User Stories
+
+[Detailed User Stories](Frvbc5_e9.feature)
