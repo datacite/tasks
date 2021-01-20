@@ -27,6 +27,11 @@ further details: https://docs.google.com/document/d/1sJUQ_IemyPp0CktKXv_tfa7PhHc
 
 - [ ] As Staff, I would like to encourage, using the earliest open hours session and newsletter, members and clients to add subject discipline using the OECD subject classification in the DOIs metadata, so that we can organically increase the completeness of subject classification in all DOIs metadata.
 
+### Detailed User Stories
+
+[Detailed User Stories File](ELmjUzA-7.feature)
+
+
 ## Non Functional Requirements
 
 - [ ] As a user, I expect the UI to add/remove/update discipline metadata to the repository to follow the default Fabrica style and usability.

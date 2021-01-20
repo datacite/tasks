@@ -21,6 +21,9 @@ Add ORCID Claiming and DOIs claims to DataCite Commons.
 - [ ] As a logged user, I would like to be able to claim DOIs into my ORCID record so that I can improve my ORCID record.
 - [ ] As a user, I would like to claim the process follows a clear define set of steps, so I don't get confused about the state of my claims.
 
+### Detailed User Stories
+
+[Detailed User Stories File](detail.feature)
 
 ## Feature Flag
 

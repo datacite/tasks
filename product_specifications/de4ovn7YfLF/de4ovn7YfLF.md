@@ -22,6 +22,9 @@ Solution validation: [This approach has been pioneered in other researcher profi
 - [ ] **As a user with a profile**, I like that visitors of my profile get an clear idea of about the openess of my research **So that** they can be aware of my level of openess.
 - [ ] **As a user with a profile**, I would like the visitors to get a grasp of my different types of openess **So that** I cannot be categorized in one single dimension of openess.
 
+### Detailed User Stories
+
+[Detailed User Stories File](de4ovn7YfLF.feature)
 
 ## Feature Flag
 
