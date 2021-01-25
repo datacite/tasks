@@ -21,21 +21,6 @@ Feature: Creating metadata with schema 4.4 using the API
               And the API should accept the new values for the 'relatedItem' property and all its sub-properties
               And the API should accept save the metadata deposit with schema version 4.4
 
-
-Feature: Adding citations from relatedItem to EventData
-
-        Scenario: A DOI is created with Schema 4.4
-            Given that user has the correct user name and password
-              And that the user has provided metadata in following schema 4.4
-             When the user deposit metadata using the API
-              And the metadata deposit includes 'relatedItem'
-              And the metadata deposit includes 'relatedItemIdentifier' sub-property
-             Then a event-data event should be send to our EventData agent
-
-
-
-
-
 Feature: Adding relatedItem information to a new DOI in Fabrica
 
         Scenario: User want to add relatedItem to the a new DOI
@@ -52,6 +37,6 @@ Feature: Adding relatedItem information to a new DOI in Fabrica
               And the user would be able to add the 'relationType' sub-property for 'relatedItem'
               And the user would be able to add the 'relatedItemType' sub-property for 'relatedItem'
               And the user would be able to add the 'creatorName' sub-property for 'relatedItem', but not other 'creator' subproperties
-              And the user would be able to add the 'contributorName' sub-property for 'relatedItem', but not other 'contributor' subproperties
+              And the user would be able to add the 'contributorName'  and 'contributorType' sub-property for 'relatedItem', but not other 'contributor' subproperties
 
 

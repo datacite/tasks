@@ -1,14 +1,14 @@
 
 ## Problem
 
-A new version of the metadata schema has been released, and we need users to have access to it via our systems.
+A new version of the metadata schema has been released, and we need users to be able to access and make deposit of metadata using our systems.
 
 Problem Validation: [The metadata WG has already worked on validating the changes of the Schema](https://wiki.tib.eu/confluence/display/datacite/Agenda)
 
 closes: https://github.com/datacite/tasks/issues/43
 ## Proposed Solution 
 
-Modify our services to handle schema version 4.4
+Modify our services to handle schema version 4.4 metadata deposits and acess.
 
 Solution Validation: [We have performed all minor changes activities in the past](https://github.com/datacite/schema/issues/56)
 
