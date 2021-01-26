@@ -29,13 +29,15 @@ Feature: Adding relatedItem information to a new DOI in Fabrica
              Then the user would be able to add 'resourceTypeGeneral' following schema 4.4
               And the user would be able to add 'relationType' sub-property following schema 4.4
               And the user would be able to add the 'relatedItem' property
+              And the user would be able to add the 'relationType' sub-property for 'relatedItem'
+              And the user would be able to add the 'relatedItemType' sub-property for 'relatedItem'
+              And the user would be able to add the 'relatedItemIdentifier' property
+              And the user would be able to add the 'relatedItemIdentifierType' property
               And the user would be able to add the 'title' sub-property for 'relatedItem', but not other 'titles' subproperties
               And the user would be able to add the 'volume' sub-property for 'relatedItem'
               And the user would be able to add the 'issue' sub-property for 'relatedItem'
-              And the user would be able to add the 'publicationYear' sub-property for 'relatedItem'
               And the user would be able to add the 'number' sub-property for 'relatedItem', but not its subproperties
-              And the user would be able to add the 'relationType' sub-property for 'relatedItem'
-              And the user would be able to add the 'relatedItemType' sub-property for 'relatedItem'
+              And the user would be able to add the 'publicationYear' sub-property for 'relatedItem'
               And the user would be able to add the 'creatorName' sub-property for 'relatedItem', but not other 'creator' subproperties
               And the user would be able to add the 'contributorName'  and 'contributorType' sub-property for 'relatedItem', but not other 'contributor' subproperties
 
