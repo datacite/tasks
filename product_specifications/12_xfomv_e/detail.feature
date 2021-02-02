@@ -14,6 +14,7 @@ Feature: Thombstone page for DOIs of inactive clients
 
         Background:
             Given that a Consortium Lead or Member has been set inactive
+              And that the DOI was set to 'registered' state by inactive workflow
 
         Scenario: landing on thombstone page
              When a DOI from the inactive repository is resolved to its thombstone page
