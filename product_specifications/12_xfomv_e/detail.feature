@@ -17,7 +17,7 @@ Feature: Thombstone page for DOIs of inactive clients
 
         Scenario: DOI with 404 in its last link check
              When a DOI from the inactive repository is resolved
-              And the DOI url has 404s from its last 10 link checks
+              And the DOI url has 404s from its last link check
              Then the resolution should lead the user to the thombstone page
     
         Scenario: landing on thombstone page
