@@ -19,13 +19,13 @@ Use an inactive workflow with a series of features to deal with the departing me
 
 ### CRITICAL
 
-- [ ] As a Datacite staff, I would like to be able set a member inactive directly from fabrica, so I don't have to worry about any other consequences of the transition to inactivity.
-- [ ] As a Datacite staff, I would like that DOIs from a inactive member were resolving to their url as long as the ulr is the correct, so that we can keep the P in PIDs.
-- [ ] As a Datacite staff, I would like that DOIs from a inactive member have no access to DataCite service offerings, so that to not incurr in resourcing to support inactive memeber DOIs.
+- [ ] As a Datacite staff, I would like to be able set a repository inactive directly from fabrica, so I don't have to worry about any other consequences of the transition to inactivity.
+- [ ] As a Datacite staff, I would like that DOIs from a inactive repository were resolving to their urls as long as the urls are the correct, so that we can keep the P in PIDs.
+- [ ] As a Datacite staff, I would like that DOIs from a inactive repositories have no access to DataCite service offerings, so that to not incurr in resourcing to support inactive repository DOIs.
 
 ## IMPORTANT
 
-- [ ] As a Datacite staff, I would like that DOIs from a inactive member to be automatically set to a tombstone, so that we can keep the quality of the DOIs.
+- [ ] As a Datacite staff, I would like that DOIs from a inactive repository to be automatically set to a tombstone, so that we can keep the quality of the DOIs.
 
 ### Detailed User Stories
 
@@ -34,7 +34,7 @@ Use an inactive workflow with a series of features to deal with the departing me
 ## Feature Flag
 
 This feature is implemented behind `inactive-workflow` feature flag and disabled by default.
-Once we've confirmed the feature is deemed stable, we remove the feature flag to publish the feature as GA.
+Once we've confirmed the feature is deemed stable, we remove the feature flag to publish the feature as Generally Available in production.
 
 ## Non Functional Requirements
 
