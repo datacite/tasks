@@ -17,7 +17,7 @@ Feature: Thombstone page for DOIs with broken links of inactive repositories
         
         Scenario: set tombstone page 
              When a user land on the inactive repository page
-             Show link checker statistics for the repository using a pie graph
+             Then show link checker statistics for the repository using a pie graph
              When a user clicks on the pie graph
              Then the user is directed to a page where they are able to filter DOIs by error code and bulk select DOIs to inactivate
 
