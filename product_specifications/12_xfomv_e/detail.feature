@@ -16,7 +16,7 @@ Feature: Inactive Repository status page
         
         Scenario: set tombstone page 
              When a user land on the inactive repository page
-             Then show link checker statistics for the repository using error code facets
+             Then show link checker statistics for the repository using a pie graph and facets using error code
              When a user clicks on a specific facet, eg: 404
              Then the user bulk select DOIs to inactivate
 
