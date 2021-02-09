@@ -28,6 +28,7 @@ Use an inactive workflow with a series of features to deal with the departing me
 - [ ] As a Datacite staff, I would like to see resolution statistics graphically for an inactive repository.
 - [ ] As a Datacite staff, I would like to select all broken DOIs for an inactive repository and set to a tombstone page.
 - [ ] As a Datacite staff, I would like that DOIs from a inactive repository to be set to a tombstone, so that we can keep the quality of the DOIs.
+- [ ] As a Datacite staff, I would like to recieve summary email to support, listing the resolution statistics for inactive repositories.
 
 ### Detailed User Stories
 
