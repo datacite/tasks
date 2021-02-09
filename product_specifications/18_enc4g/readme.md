@@ -16,31 +16,30 @@ We will be using DataCite local repository identifiers in Commons to connect to 
 
 ### CRITICAL
 
-- As a user, I would like to search for repositories by their name
-- As a user, I would like to see repositories by an organization.
-- As a user, I would like to see related outputs for a given repository.
-- As a user, I would like to see basic repository metadata eg: name, description, repository URL, subjects
-- As a user, I would like to be able to find who has been depositing data for a given repository.
-
+- [ ] As a user, I would like to search for repositories by their name
+- [ ] As a user, I would like to see repositories by an organization.
+- [ ] As a user, I would like to see related outputs for a given repository.
+- [ ] As a user, I would like to see basic repository metadata eg: name, description, repository URL, subjects
+- [ ] As a user, I would like to be able to find who has been depositing data for a given repository.
 
 ### IMPORTANT
 
-- As a FAIRsFAIR user, I would like to search for trustworthy (certified) repositories.
-- As a FAIRsFAIR user, I would like to search for DOIs by filtering for trustworthy (certified) repositories.
-- As a FAIRsFAIR user, I would like to see additional repository metadata, including:
+- [ ] As a FAIRsFAIR user, I would like to search for trustworthy (certified) repositories.
+- [ ] As a FAIRsFAIR user, I would like to search for DOIs by filtering for trustworthy (certified) repositories.
+- [ ] As a FAIRsFAIR user, I would like to see additional repository metadata, including:
   - Certifications
   - Data is openly accessible
   - Licensing
   - Persistent Identifiers usage
   - Repository Type
   - link to re3data
-- As a AGU (American Geophysical Union) user, I would like to find repositories that allows for upload and provide DOIs
+- [ ] As a AGU (American Geophysical Union) user, I would like to find repositories that allows for upload and provide DOIs
 
 ### NICE TO HAVE
 
-- As a researcher, I would like to find repositories that meet certain criteria
-- As a AGU user, I would like to find community recommended repositories
-- As a FAIRsFAIR user, I would like to find community recommended repositories
+- [ ] As a researcher, I would like to find repositories that meet certain criteria
+- [ ] As a AGU user, I would like to find community recommended repositories
+- [ ] As a FAIRsFAIR user, I would like to find community recommended repositories
 
 
 Phase 2:
