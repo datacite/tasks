@@ -25,6 +25,7 @@ Display a list of the top five co-authors of a particular researcher.
 ### NICE TO HAVE
 - [ ] As a user, I want a list of top co-authors to display the quantity of co-authored resources together with the name of the co-author so that I can quickly know how many resources have been co-authored with the co-author 
 
+## Detailed User Stories
 
 ```cucumber
 Feature: Top co-author list
@@ -49,7 +50,7 @@ Once we've confirmed the feature is deemed stable, we remove the feature flag to
 
 ### Feasibility Checks
 
-How to get all the co-authors of a Person?
+- How to get all the co-authors of a Person?
 
 ```graphql
 {
