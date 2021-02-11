@@ -1,8 +1,22 @@
-## Implementation of the Development Life Cycle
+## DesignOps: Implementation of the Development Life Cycle
+
+## This is not a Static Development Life Cycle
+
+Think about it as a Product. We release an MVP and then we iterate to improve it.
 
 
-## How are we addressing HWMs
+- Q1. Work in the implementation (Document, templates, productboard changes,communicate to internal stakeholders, etc.)
+- Q2. MVP Run (two sprints)
+  - Expect mistakes, problems, missing thing... learning.
+- Q3. Proper First Run
+  - Run a retrospective at the end of quarter.
+- Q4. Implemente feedback from retrospective.
 
+
+
+## Objectives
+
+#### From HWMs
 
 - HWM have complete and timely product specifications
 - HMW improve suggestion changes coordination with the metadata WG
@@ -13,15 +27,29 @@
 - HMW come to a collective agreement on our priorities
 
 
+#### From Affinity Mapping
+
+- Process all insights in ProductBoard
+- Collect Solution Validation Data
+- Prioritisation in the RoadMap meeting
+- Plan broader Communication
+- Collect further input from the community/stakeholders
+- Reviewed feature Technical feasibility
+- Describe what will not be done (or later) and why
+
+## HWMs
+
+
 ### HWM have complete and timely product specifications
 
 - Having a checklist of items to include in the spec.
-- 
+- Working in parallel tracks with the development team.
 
 ### HMW improve suggestion changes coordination with the metadata WG
 
 - Coordinate a campaign of validation for a suggestion that reaches datacite first.
 - Hand over the suggestion and validation results to Metadata WG via the appropriate channels.
+- Publish the metadata WG decision Process in the support website.
 
 ### HMW has a seamless handover with clear product specification
 
@@ -29,32 +57,33 @@
 - Use a Sprint Planning meeting before every Sprint to schedule which user stories from the product specification will be built in the Sprint.
 - Asynchronously openly review product specifications and its user stories during the Sprint.
 - Unify Product Specification as much as possible in a single document. 
+- Use the Roadmap meeting to communicate and decide prioritisation of solutions.
 
 ### HMW better incorporate member input?
 
 - Use an Idea/Problem/Suggestion Validation cycle for member input using multiple venues and methods.
 - Use a  Validation cycle for grant requirements.
+- Publish request from input in the roadmap.
 
 ### HMW deals with resourcing for the activities in this part of the cycle.
 
 - Having flexibility on the methods used in new activities (such as validations)
 - Using open asynchronous review to manage specifications.
 
+
 ### HMW successfully coordinate between teams
 
 - Communicate to DataCite Staff the status of Idea/Problem/Suggestion/Solution at different Life Cycle stages.
 - Encourage directors to pass the common understanding down to their teams.
 - Work in a parallel track for discovering and building solutions with the Tech Team.
+- Use the srpint meeting to schedule work clearly
+
 
 ### HMW come to a collective agreement on our priorities
 
 - De/Prioritize, both validated Problems/Suggestion and validated Solutions only in the Roadmap Action call.
 - Involve the technical team and the engagement team at the early stages of the Development Life Cycle.
 
-
-## This is not a Static Development Life Cycle
-
-Think about it as an MVP.
 
 
 ## To integrate with future iterations.
@@ -64,18 +93,17 @@ Think about it as an MVP.
 - 
 
 
-## Some examples from the past
+## Product Development Life Process
 
+### Insights Backlog 
 
-## Events
-
-### Described Stakeholder Input
+##### Described Stakeholder Input
 
 - Create Templates in different systems to allow stakeholders and staff to submit complete descriptions
 - Use a problem definition questionary to define the template
 
 
-### Idea captured in product board / consolidated with existing ideas
+##### Idea captured in product board / consolidated with existing ideas
 
 -  Capture all new ideas, suggestions, and insights in the product board
 -  Groom the list of insights in ProductBoard Weekly.
@@ -88,8 +116,9 @@ Think about it as an MVP.
   - Add link survey if needed.
 
 
+### Problem Validation Cycle
 
-### Insights were processed as product features
+##### Insights were processed as product features
 
 -  Groom the list of Features in ProductBoard Weekly.
   - Tag, add insights that might be related
@@ -100,12 +129,12 @@ Think about it as an MVP.
   - Open a Problem Validation Research issue to execute the research study.
 
 
-### Chose Problem validation methods
+##### Chose Problem validation methods
 
 - Choose a validation method that is cost-efficient
 
 
-### Collected Validation data
+##### Collected Validation data
 
 - Recruit stakeholders to collect data.
 - Perform data collection
@@ -113,7 +142,7 @@ Think about it as an MVP.
 
 
 
-### Analysed validation data
+##### Analysed validation data
 
 - Drop Feature if there is no support for the problem/suggestion
 
@@ -141,36 +170,39 @@ Think about it as an MVP.
   - Validate approach with help from stakeholders. Run user validation using any of the proposed methods
 
 
-### Reviewed the feature's Technical feasibility
+##### Reviewed the feature's Technical feasibility
 
 - Discuss the technical implications with Engineering to ensure that what is being proposed is possible within the desired timeframe. 
 - Engage engineering peers early and often through Slack messages, pins on issues, or scheduling sessions to discuss the proposal.
 
-### Created/ modified  open Product  Design Specification
+##### Created/ modified  open Product  Design Specification
 - Use template for Product Specification
 - Make PR to Specifications Repo
 - Include User Stories and detailed user stories
 - Add non-functional requirements
 
-### Chose Solution validation methods
+### Solution Validation cycle
+
+
+
+##### Chose Solution validation methods
 
 - Choose a cost-efficient validation method
 
-### Collected Validation data
+##### Collected Validation data
 
 - Recruit stakeholders to collect data.
 - Perform data collection
 - Collect data as insights in ProductBoard
 
-### Async Reviewed the Open Product Specification
+##### Async Reviewed the Open Product Specification
 
 - Generate Github Issue to create Tech Specification
 
 
 ### Created Tech Specification
 
-- Black Magic
-
+- [TBD]
 
 ### Prioritised in Roadmap meeting
 
@@ -179,16 +211,22 @@ Think about it as an MVP.
 - Compose update for Feature (this will notify the submitters of the insight and allow others to vote for changes.)
 - Move Feature to the planned section
 - When Feature is deprioritized
+  - Describe prioritisation reasoning
   - Remove Tech Team as feature followers
 - When Feature is Prioritised
+  - Describe prioritisation reasoning
   - Generate Github Issue to create Feature EPIC
   - Add EPIC to the Delivery Backlog
+  - Add DataCite Team as feature followers
+  - Create Github issue for broader communication planning
 
-### Async Reviewed the Tech Specification
+##### Async Reviewed the Tech Specification
 
-- 
 
-### Backlog for next Sprint has been refined
+
+### Delivery Backlog
+
+##### Backlog for next Sprint has been refined
 
 - Groom the Delivery Backlog twice a sprint
   - assign estimates
@@ -209,20 +247,19 @@ Think about it as an MVP.
   - Compute capacity utilization
 - Compute capacity utilization for all Products of the Sprint
 - Adjust prioritization of user stories
+    - Describe prioritisation reasoning
 - Update Description of work in an EPIC for each product.
 
-### Scheduled Development plan for Next Sprint
+##### Scheduled Development plan for Next Sprint
 
 - Add to the roadmap in Zenhub
 
-### Move to the "in progress" section of the roadmap
+##### Move to the "in progress" section of the roadmap
 
 - Compose update for Feature in product board (this will notify the submitters of the insight and allow others to vote for changes.)
 - Move Feature to in progress in ProductBaord
-- Add DataCite Team as feature followers
-- Create Github issue for broader communication planning
 
-
+------
 
 ## Grant Cycle
 
@@ -241,8 +278,10 @@ Think about it as an MVP.
   - Define a set of question to answer
   - Conduct investigation of potential solutions
 - When grant requirement is deprioritized
+  - Describe prioritisation reasoning
   - Remove Tech Team as feature followers
 - When grant requirement is Prioritised
+  - Describe prioritisation reasoning
   - Add Tech Team as feature followers
   - Added to the Discovery Backlog
   - Generate Github Issue to create Product Specification
@@ -280,9 +319,11 @@ Think about it as an MVP.
 - Add Bugs/Refactoring/Tech-debt  for consideration in the Roadmap Meeting
 - When Bugs/Refactoring/Tech-debt is deprioritized
   - do nothing
+  - Describe prioritisation reasoning
 - When Bugs/Refactoring/Tech-debt is prioritized
+  - Describe prioritisation reasoning
   - Create feature in Productbaord
-  - Add Tech Team as feature followers
   - Generate Github Issue to create Feature EPIC
   - Add EPIC to the Delivery Backlog
-
+  - Add DataCite Team as feature followers
+  - Create Github issue for broader communication planning
