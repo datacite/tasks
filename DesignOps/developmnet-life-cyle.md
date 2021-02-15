@@ -1,6 +1,5 @@
-## DesignOps: Implementation of the Development Life Cycle
 
-## This is not a Static Development Life Cycle
+## This is not a Static Development Journey
 
 Think about it as a Product. We release an MVP and then we iterate to improve it.
 
@@ -73,7 +72,7 @@ Think about it as a Product. We release an MVP and then we iterate to improve it
 
 ### HMW successfully coordinate between teams
 
-- Communicate to DataCite Staff the status of Idea/Problem/Suggestion/Solution at different Life Cycle stages.
+- Communicate to DataCite Staff the status of Idea/Problem/Suggestion/Solution at different Journey stages.
 - Encourage directors to pass the common understanding down to their teams.
 - Work in a parallel track for discovering and building solutions with the Tech Team.
 - Use the srpint meeting to schedule work clearly
@@ -82,7 +81,7 @@ Think about it as a Product. We release an MVP and then we iterate to improve it
 ### HMW come to a collective agreement on our priorities
 
 - De/Prioritize, both validated Problems/Suggestion and validated Solutions only in the Roadmap Action call.
-- Involve the technical team and the engagement team at the early stages of the Development Life Cycle.
+- Involve the technical team and the engagement team at the early stages of the Development Journey.
 
 
 
@@ -93,7 +92,7 @@ Think about it as a Product. We release an MVP and then we iterate to improve it
 - 
 
 
-## Product Development Life Process
+## Product Development Journey
 
 ### Insights Backlog 
 
