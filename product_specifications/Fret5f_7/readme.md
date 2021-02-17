@@ -31,6 +31,21 @@ Solution Validation: We collected UX feedback using 3 questions survey with 4 us
 
 - [ ] As a user, I would like a filter works box to search the list of resources in a Researcher Profile page, so that I can find items.
 
+
+## Detailed User Stories
+
+```cucumber
+
+Feature: Search on page
+
+  Scenario: Filtering related works and citations in individual pages
+    Given that a user is a Profile/Organisation/Work Page and the Profile/Organisation/Work has related works or citations
+    When the user enters a term in the "Filter works" search box and click the search icon or presses enter
+    Then the page should filter related works or citations according to the terms entered.
+
+```
+
+
 ## Non Functional Requirements
 
 - [ ] As a user, I expect the reponse time to be under 10 seconds
