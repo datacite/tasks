@@ -39,7 +39,7 @@ Think about it as a Product. We release an MVP and then we iterate to improve it
 ## HWMs
 
 
-### HWM have complete and timely product specifications
+### HMW have complete and timely product specifications
 
 - Having a checklist of items to include in the spec.
 - Working in parallel tracks with the development team.
@@ -50,7 +50,7 @@ Think about it as a Product. We release an MVP and then we iterate to improve it
 - Hand over the suggestion and validation results to Metadata WG via the appropriate channels.
 - Publish the metadata WG decision Process in the support website.
 
-### HMW has a seamless handover with clear product specification
+### HMW Have a seamless handover with clear product specification
 
 - Use a Build/Delivery Backlog meeting every half a sprint to groom use stories in the specification.
 - Use a Sprint Planning meeting before every Sprint to schedule which user stories from the product specification will be built in the Sprint.
