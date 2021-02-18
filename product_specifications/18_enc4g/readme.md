@@ -1,6 +1,9 @@
 
 ## Problem
-
+DataCite members create DOIs within their managed repositories. DataCite Commons can be used to search for DOIs from a specific repository by using DataCite internal repository identifiers eg:client.uid:bl.cam. We need a dedicated user friendly interface to search repositories and their connections in DataCite Commons to:
+- retire DataCite search
+- retire Repository finder tool
+- fulfil FAIRsFAIR grant requirements
 
 ## Proposed Solution 
 
