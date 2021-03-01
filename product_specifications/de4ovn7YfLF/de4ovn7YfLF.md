@@ -8,7 +8,9 @@ Problem/Idea validation: https://jlsc-pub.org/articles/abstract/10.7710/2162-330
 
 ## Proposed Solution 
 
-Create an Open Access Badge, similar to that of ImpactStory, that [transform](https://danielmiessler.com/blog/difference-data-information-intelligence/) the `data` into useful `information` to the Commons visitor.
+Create an Open Access Badge, similar to that of ImpactStory, that [transform](https://danielmiessler.com/blog/difference-data-information-intelligence/) the `data` into useful `information` to the Commons visitor. 
+
+Potentially the open access metric that is computed would need to be stored as a value for the researcher/individual/person.
 
 Wireframe: https://www.figma.com/file/LX0jHl9chHKvv430swTpwm/open-access-badge?node-id=243%3A1
 
