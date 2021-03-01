@@ -10,7 +10,7 @@ Display a list of the top five co-authors of a particular researcher.
 
  [WireFrame](https://www.figma.com/file/JZXYSUc6ZofDBlFmUzNHQG/PARSEC_new-features?node-id=0%3A1)
 
- Solution Validation: In our researcher, we have seen this feature is present in many other [researcher profiles](https://docs.google.com/document/d/1tQcBpUOi4kg1Gvluvc3dDvhGaVxi2CpmTxZG4U9W1Vw/edit).
+ Solution Validation: In our researcher, we have seen this feature is present in many other [researcher profiles](https://docs.google.com/document/d/1tQcBpUOi4kg1Gvluvc3dDvhGaVxi2CpmTxZG4U9W1Vw/edit). We also run a [validation with users have good] results(https://docs.google.com/forms/d/1p3DnS796Se1IFE3rwx_f3VX7GQo1PCKpVTMbxsALR1U/edit).
 
 ## User Stories
 
