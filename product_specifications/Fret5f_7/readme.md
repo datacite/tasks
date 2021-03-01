@@ -22,7 +22,7 @@ Solution Validation: [After 1 second, users get impatient and notice that they'r
 
 - [WireFrame](https://www.figma.com/file/L1z8E4vwQbcN7txinDKYGt/parsec-search?node-id=1%3A5719)
 
-Solution Validation: We collected UX feedback using three questions survey with four users (Including the PARSEC lead) and two other competing solutions. The search on the sidebar was the highest-ranked.
+Solution Validation: We collected UX feedback using three questions survey with four users (Including the PARSEC lead) and two other competing solutions. [The search on the sidebar was the highest-ranked.](https://docs.google.com/forms/d/1qopjQZl3lFtMvXQfxqcwoas39GnkheWgm9i1eVCCx6s/edit?usp=drive_web)
 
 ## User Stories
 
