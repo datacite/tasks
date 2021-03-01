@@ -15,7 +15,7 @@ Wireframe: https://www.figma.com/file/LX0jHl9chHKvv430swTpwm/open-access-badge?n
 
 Solution validation: 
 
-- [This approach has been pioneered in other researcher profiles such as ImpactStory](https://blog.ourresearch.org/what-level-of-open-access-scholar-are-you/). - Mock up: https://profiles.impactstory.org/about/achievements. 
+- [This approach has been pioneered in other researcher profiles such as ImpactStory](https://blog.ourresearch.org/what-level-of-open-access-scholar-are-you/).
 - Finally, we ran a [validation with users](https://docs.google.com/forms/d/1p3DnS796Se1IFE3rwx_f3VX7GQo1PCKpVTMbxsALR1U/edit#responses)
 
 
@@ -25,9 +25,6 @@ Solution validation:
 - [ ] **As a user with a profile**, I like that visitors of my profile get an clear idea of about the openess of my research **So that** they can be aware of my level of openess.
 - [ ] **As a user with a profile**, I would like the visitors to get a grasp of my different types of openess **So that** I cannot be categorized in one single dimension of openess.
 
-### Detailed User Stories
-
-[Detailed User Stories File](de4ovn7YfLF.feature)
 
 ## Feature Flag
 
