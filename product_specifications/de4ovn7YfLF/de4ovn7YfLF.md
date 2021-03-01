@@ -13,7 +13,10 @@ Create an Open Access Badge, similar to that of ImpactStory, that [transform](ht
 Wireframe: https://www.figma.com/file/LX0jHl9chHKvv430swTpwm/open-access-badge?node-id=243%3A1
 
 
-Solution validation: [This approach has been pioneered in other researcher profiles such as ImpactStory](https://blog.ourresearch.org/what-level-of-open-access-scholar-are-you/). Mock up: https://profiles.impactstory.org/about/achievements. we ran a [validation with users](https://docs.google.com/forms/d/1p3DnS796Se1IFE3rwx_f3VX7GQo1PCKpVTMbxsALR1U/edit#responses)
+Solution validation: 
+
+- [This approach has been pioneered in other researcher profiles such as ImpactStory](https://blog.ourresearch.org/what-level-of-open-access-scholar-are-you/). - Mock up: https://profiles.impactstory.org/about/achievements. 
+- Finally, we ran a [validation with users](https://docs.google.com/forms/d/1p3DnS796Se1IFE3rwx_f3VX7GQo1PCKpVTMbxsALR1U/edit#responses)
 
 
 ## User Stories
