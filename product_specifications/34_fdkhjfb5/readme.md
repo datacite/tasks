@@ -44,4 +44,5 @@ The REST API has all the functionality needed to manage members, repositories an
 
 ## Non Functional Requirements
 
-- [ ] When using the REST API they client should make sure that the response was succesfull.
+- [ ] When using the REST API they client should make sure that the response was succesfull (200).
+- [ ] When te response is unsuccesful it should trigger a slack message to DataCite.
