@@ -38,6 +38,44 @@ Solution Validation: [We have performed all minor changes activities in the past
 [Detailed User Stories](detail.feature)
 
 ```cucumber
+
+Background: Partial Support for Schema 4.4
+
+Feature: Creating metadata with schema 4.4 using the API
+
+        Scenario: creating a new DOI
+            Given that user has the correct user name and password
+              And it has provided metadata in following schema 4.4
+             When the user deposit metadata using the API
+             Then the API should accept the new values for the 'resourceTypeGeneral' property
+
+
+
+        Scenario: creating a updating an existing DOI to schema 4.4
+            Given that user has the correct user name and password
+              And that the user has provided metadata in following schema 4.4
+              And that exisiting DOI is previous compatible version
+             When the user deposit metadata using the API
+             Then the API should accept the new values for the 'resourceTypeGeneral' property
+              And the API should accept save the metadata deposit with schema version 4.4
+
+Feature: Adding relatedItem information to a new DOI in Fabrica
+
+        Scenario: User want to add relatedItem to the a new DOI
+            Given that user is logged in Fabrica
+             When the user visits the DOI Form page
+             Then the user would be able to add 'resourceTypeGeneral' following schema 4.4
+
+Feature: GraphQl query support
+
+        Scenario: A user request DMPs in a query
+            Given that user makes a query for DataManagementPlan in Graphql
+             When the API is requesting DOIs 
+             Then the queyr should use the filter with the new resourceTypeGeneral
+
+
+Background: Full Support for Schema 4.4
+
 Feature: Creating metadata with schema 4.4 using the API
 
         Scenario: creating a new DOI
