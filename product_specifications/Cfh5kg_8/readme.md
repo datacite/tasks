@@ -119,6 +119,13 @@ Feature: Adding relatedItem information to a new DOI in Fabrica
               And the user would be able to add the 'creatorName' sub-property for 'relatedItem', but not other 'creator' subproperties
               And the user would be able to add the 'contributorName'  and 'contributorType' sub-property for 'relatedItem', but not other 'contributor' subproperties
 
+Feature: GraphQl query support
+
+        Scenario: A user request DMPs in a query
+            Given that user makes a query for DataManagementPlan in Graphql
+             When the API is requesting DOIs 
+             Then the queyr should use the filter with the new resourceTypeGeneral
+
 
 
 ```
