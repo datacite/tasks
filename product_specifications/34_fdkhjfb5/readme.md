@@ -17,7 +17,7 @@ The REST API has all the functionality needed to manage members, repositories an
 ### CRITICAL
 
 1. As a Saleforce Manager, I would like that when a Member application is approaved in Saleforce a Member account is generate in Fabrica (Production), So that I do not spend time on generating it manually.
-1. As a Saleforce Manager, I would like that when a Opportunity is created in Saleforce a Member account is generated in Fabrica (Stage), So that I do not spend time on generating it manually.
+1. As a Saleforce Manager, I would like that when a Opportunity is created in Saleforce a Member account is generated in Fabrica (Test), So that I do not spend time on generating it manually.
 
 
 ### Detailed User Stories
@@ -46,3 +46,40 @@ The REST API has all the functionality needed to manage members, repositories an
 
 - [ ] When using the REST API they client should make sure that the response was succesfull (200).
 - [ ] When te response is unsuccesful it should trigger a slack message to DataCite.
+
+
+## Technical Fesiability
+
+Documentation of the API can be found in our documentation together with the [API reference](https://support.datacite.org/reference/introduction).
+
+- How to create a member?
+
+```json
+{
+    url: 'https://api.test.datacite.org/providers',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+    },
+    body: {
+      data: {
+        attributes: {
+          symbol: "symbol",
+          name: "name",
+          displayName: "displayName",
+          systemEmail: "systemEmail",
+          passwordInput: "passwordInput",
+          confirmPasswordInput: "confirmPasswordInput",
+        },
+        type: 'providers',
+      },
+    },
+  }
+
+
+
+```
+
+
+
