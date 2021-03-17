@@ -54,7 +54,7 @@ Documentation of the API can be found in our documentation together with the [AP
 
 - How to create a member?
 
-```json
+```javascript
 {
     url: 'https://api.test.datacite.org/providers',
     method: 'POST',
