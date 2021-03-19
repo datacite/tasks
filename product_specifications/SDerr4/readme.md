@@ -19,16 +19,16 @@ As up today that would be:
 
 Relese Candiate
 - https://api.datacite.org paths:
-  - dois
-  - repositories
-  - organisations
+  - /v3/dois
+  - /v3/repositories
+  - /v3/organisations
 
 For Deprecation
 - https://ez.datacite.org, all paths 
 - https://api.datacite.org, paths:
-  - works
-  - clients
-  - users
+  - /works
+  - /clients
+  - /users
 
 
 ## User Stories
