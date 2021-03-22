@@ -1,3 +1,5 @@
+# Top co-authors list
+
 ## Problem
 
 There are is not a way to visualize the top co-authors of a particular researcher.
@@ -18,6 +20,7 @@ Display a list of the top five co-authors of a particular researcher.
 - [ ] As a user, I want to know the top five co-authors of a particular researcher so that I can analyze the network of the researcher's collaborations.
 - [ ] As a user, I want to be able to navigate to the profile of the top five co-authors of a particular researcher so that I can explore their profiles.
 - [ ] As a user, I expect the UI of the top co-author unnumbered list to include a maximum of 5 co-authors' names.
+- [ ] As a user, I want a list of top co-authors to have the ability to filter/facet the works of the profile, so that I can facet by the co-author and author resources.
 
 ### IMPORTANT
 - [ ] As a user, I want a list of top co-authors to be listed by a number of resources they have co-authored so that I can differentiate the most popular collaborator at the top of the list.
@@ -37,6 +40,13 @@ Feature: Top co-author list
              When the user clicks on any of the top co-authors list
              Then the user should be redirected to the co-author page
 
+
+        Scenario: Facet author profile page by co-author
+            Given that the user is in a researcher profile page
+              And that a the profile has some resources related to other authors
+              And that the authors ORCIDs are available
+             When the user clicks on the checkbox of any of the top co-authors list in the facet
+             Then the list of works should be filtered by the co-author ORCID
 ```
 
 ## Non Functional Requirements
