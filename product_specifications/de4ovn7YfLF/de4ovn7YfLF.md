@@ -78,4 +78,24 @@ Feature: Open Access Badges in DataCite Commons
   - https://thenounproject.com/search/?q=science+journal+computational&i=1885778 triatlethe
 
 
+## Technical Feasibility 
+
+How to query all DOIs with certain license.
+
+```json
+{
+  person(id:"https://orcid.org/0000-0003-3484-6875"){
+    works(first:100, query:"rightsList.rightsIdentifier:\"cc-by-3.0\" && creators.nameIdentifiers.nameIdentifier:\"https://orcid.org/0000-0002-8099-7538\""){
+      licenses{
+        id
+        count
+      }
+    }
+  }
+}
+
+
+```
+
+
 
