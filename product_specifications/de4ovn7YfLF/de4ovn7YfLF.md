@@ -82,7 +82,7 @@ Feature: Open Access Badges in DataCite Commons
 
 How to query all DOIs with certain license.
 
-```json
+```graphql
 {
   person(id:"https://orcid.org/0000-0003-3484-6875"){
     works(first:100, query:"rightsList.rightsIdentifier:\"cc-by-3.0\" && creators.nameIdentifiers.nameIdentifier:\"https://orcid.org/0000-0002-8099-7538\""){
