@@ -17,18 +17,16 @@ Solution Validatio: [We run a feedback session with potential interested parties
 ## User Stories
 
 ### CRITICAL
-
 - [ ] As an repository admin, I would like the tracking code snippet to be as easy to install as a google analytics tracker, So that I don't need to incur in additional technical infrastructure or developing resources.
 - [ ] As an repository admin, I would like the tracking code snippet not to incurr any GDPR breaches, So that I don't have to implement any consent policy.
-- [ ] As an repository admin, I would like the collected usage stats were available via the REST API, GraphQL and  data metrics badge, So that my usage stats can be distributed to the web.
-- [ ] As product designer, I would like to Usage stats tracker ID to be a unique and its generated automatically, So that usega stats do not get mixed and users don't have to spent time generating IDs.
 - [ ] As a bibliometrician, I would like the processing service to process usage in accordance to the COUNTER code of practice, So I can compare usage stats from using this method with other usage stats collected from other methods (SUSHI reports).
 - [ ] As a bibliometrician, I would like the collected usage stats were available via the Datacite GraphQL API, So that I can run my data analysis in jupyter notebooks and scripts.
+- [ ] As an repository admin, I would like to have access to the usage stats directly Fabrica, So I have a quick overview of the usage when adminitrating my DOIs.
 
 ### IMPORTANT
 
+- [ ] As an repository admin, I would like the collected usage stats were available via the REST API, GraphQL and  data metrics badge, So that my usage stats can be distributed to the web.
 - [ ] As an repository admin, I would like to have access to a tracker ID directly from Fabrica, So I don't have to go to any other place to configure my usage stats processing.
-- [ ] As an repository admin, I would like to have access to the usage stats directly Fabrica, So I have a quick overview of the usage when adminitrating my DOIs.
 
 ### NICE TO HAVE
 
@@ -155,6 +153,13 @@ There are a few open questions about technical feasibility:
 
 
 
+
+
+
+
+
+
+- [ ] As product designer, I would like to Usage stats tracker ID to be a unique and its generated automatically, So that usega stats do not get mixed and users don't have to spent time generating IDs.
 
 
 
