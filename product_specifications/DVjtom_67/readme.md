@@ -136,9 +136,6 @@ Feature: Acessing Usage Stats Processing
 
 - As an repository admin, I would like the collected usage stats were available, in the different interfaces, within 10 days after the end of month of collection.
 
-
-
-
 ## Feature Flag
 
 This feature is implemented behind the `usage-processing-service` feature flag and disabled by default.
@@ -150,37 +147,3 @@ There are a few open questions about technical feasibility:
 
 - How can plausible be used display usage stats? 
 - How can relaiably process usage stats according to the CoP and produce similar stats as with the weblogs processing?
-
-
-
-
-
-
-
-
-
-- [ ] As product designer, I would like to Usage stats tracker ID to be a unique and its generated automatically, So that usega stats do not get mixed and users don't have to spent time generating IDs.
-
-
-
-
-        Scenario: Recieving usage stats from the Tracker for existing DataCite DOIs
-            Given that Stats Processing Service received the analytics from the Tracker
-             When ----
-             Then the processor must process the analytics following the COUNTER Code of Practice for Research Data.
-             And processor must send the processed stats to the Eventdata service with the appropiated metadata: source-id, relation-type-id, total, obj-id, subj-id
-             And subj-id must be an url to usage report in the '/reports' endpoint of the month in which the usage stats were captured.
-
-
-
- Feature: Generating Usage Report
-        Scenario: Generating a usage report in SUSHI format on demand
-            Given that the user staff admin wants to generate a usage report in SUSHI format for a give repository
-              And tha staff_admin user is in the repository settings of a given repository
-             When the user click generate report
-             Then the Fabrica should transition to generation report page
-             And the page should show a month selector and a generate Usage Report button
-             When the user selects a month
-             And the user click generate report button
-             Then a message with the URL of the report to be generated should be displayed
-             And a background job should be triggered to generate a USAGE report in SUSHI format using EventData events.
