@@ -81,12 +81,15 @@ Feature: Getting the Usage stats tracker CODE
 
 Feature: Usage Stats Processing Service 
 
-
         Scenario: Recieving usage stats from the Tracker for existing DataCite DOIs
             Given that Stats Processing Service received the analytics from the Tracker
              When the end of the month arrives.
              Then the processor must process the analytics following the COUNTER Code of Practice for Research Data.
-             And the processor must generate a JSON SUSHI report of the stats by repository
+             And the processor must generate a JSON SUSHI report of the stats by repository with the following metrics types:
+                unique-investigations-regular
+                unique-requests-regular
+                total-investigations-regular
+                total-requests-regular
              And processor must send the JSON SUSHI report to the REST API '/reports'
 
         Scenario: Recieving usage stats from the Tracker for non Datacite DOIs (transfer or malformed)
@@ -108,6 +111,11 @@ Feature: Acessing Usage Stats Processing
              When a user visits to the endpoint '/graphql' and makes a query for a viewsCount or downloadsCount
              Then the user should be able to see the usage stats counts in the response
 
+        Scenario: Displaying Usage Stats from Tracker in the Data metrics badge
+            Given that usage stats exist for a DOI
+             When a user visits a page that include the Data metrics badge for that DOI
+             Then the user should be able to see the usage stats counts in the badge
+
         Scenario: Displaying Usage Stats from Tracker in the EventData API
             Given that usage stats exist for a DOI
              When a user visits to the enpoints '/events/doi={doi-name}'
@@ -118,13 +126,18 @@ Feature: Acessing Usage Stats Processing
              When a user visits to the Usage Tracking Dashboard Tab
              Then the user should be able to see the usage stats in different views.
 
+        Scenario: Displaying Usage Stats from Tracker in SUSHI Reports
+            Given that usage stats exist for a Repository on a given month
+             When a user visits to the enpoint '/reports/{report-id}'
+             Then the user should be able to download a usage report (SUSHI JSON) 
 
 ```
 
 
 ## Non Functional Requirements
 
-- 
+- As an repository admin, I would like the collected usage stats were available, in the different interfaces, within 10 days after the end of month of collection.
+
 
 
 
