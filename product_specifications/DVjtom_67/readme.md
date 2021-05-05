@@ -4,7 +4,7 @@
 
 Repositories lack the technical infrastructure to be sending this information regularly via the usage API. 
 
-Problem validation: [This is a t the core of the MDC and its has been voiced by many users](https://datacite.productboard.com/roadmap/2537097-development-journey/features/7041967/detail) as wel las in the previous [survey](https://zenodo.org/record/3476545#.YIBZ36kzZUI). 
+Problem validation: [This is at the core of the MDC and its has been voiced by many users](https://datacite.productboard.com/roadmap/2537097-development-journey/features/7041967/detail) as well as in the previous [survey](https://zenodo.org/record/3476545#.YIBZ36kzZUI). 
 
 ## Solution 
 
@@ -12,20 +12,20 @@ We aim to provide a Tracking Code (similar to GoogleAnalytics), that can be embe
 
 WireFrames: [Figma File](https://www.figma.com/file/Fd54mIb3WVYqQfw3KQmp68/SAAS-Processor?node-id=0%3A1)
 
-Solution Validatio: [We run a feedback session with potential interested parties. The overall feeedback is tha the solution solved their needs]()
+Solution Validatio: [We run a feedback session with potential interested parties. The overall feeedback is that the solution solved their needs]()
 
 ## User Stories
 
 ### CRITICAL
-- [ ] As an repository admin, I would like the tracking code snippet to be as easy to install as a google analytics tracker, So that I don't need to incur in additional technical infrastructure or developing resources.
-- [ ] As an repository admin, I would like the tracking code snippet not to incurr any GDPR breaches, So that I don't have to implement any consent policy.
+- [ ] As an repository admin, I would like the tracking code snippet to be as easy to install as a google analytics tracker, So that I don't need to incur in additional technical infrastructure or development resources.
+- [ ] As an repository admin, I would like the tracking code snippet not to incur any GDPR breaches, So that I don't have to implement any consent policy.
 - [ ] As a bibliometrician, I would like the processing service to process usage in accordance to the COUNTER code of practice, So I can compare usage stats from using this method with other usage stats collected from other methods (SUSHI reports).
 - [ ] As a bibliometrician, I would like the collected usage stats were available via the Datacite GraphQL API, So that I can run my data analysis in jupyter notebooks and scripts.
 - [ ] As an repository admin, I would like to have access to the usage stats directly Fabrica, So I have a quick overview of the usage when adminitrating my DOIs.
 
 ### IMPORTANT
 
-- [ ] As an repository admin, I would like the collected usage stats were available via the REST API, GraphQL and  data metrics badge, So that my usage stats can be distributed to the web.
+- [ ] As an repository admin, I would like the collected usage stats were available via the REST API, GraphQL and data metrics badge, So that my usage stats can be distributed to the web.
 - [ ] As an repository admin, I would like to have access to a tracker ID directly from Fabrica, So I don't have to go to any other place to configure my usage stats processing.
 
 ### NICE TO HAVE
