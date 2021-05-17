@@ -12,16 +12,16 @@ We aim to provide a Tracking Code (similar to GoogleAnalytics) that can be embed
 
 WireFrames: [Figma File](https://www.figma.com/file/Fd54mIb3WVYqQfw3KQmp68/SAAS-Processor?node-id=0%3A1)
 
-Solution Validation: [We run a feedback session with potentially interested parties. The overall feedback is that the solution solved their needs]()
+Solution Validation: [We run a feedback session with potentially interested user. These, were users that had reached Datacite in the past about processing usage using the code of practice but they found the processing heav yresource intensive for their organisations. The overall feedback is that the solution solved their needs](https://jamboard.google.com/d/1Z2eFVp2St-fKx9bQemYuB25zDfRjaBHMT2jTBizYR6Y/viewer)
 
 ## User Stories
 
 ### CRITICAL
 - [ ] As a repository admin, I would like the tracking code snippet to be as easy to install as a google analytics tracker, so I don't need to incur additional technical infrastructure or developing resources.
 - [ ] As a repository admin, I would like the tracking code snippet not to incur any GDPR breaches, So that I don't have to implement any consent policy.
+- [ ] As a repository admin, I would like to have access to Fabrica's usage tracking directly, so I have a quick overview of the Usage when administrating my DOIs.
 - [ ] As a bibliometrician, I would like the processing service to process usage according to the COUNTER code of practice, So I can compare usage stats from using this method with other usage stats collected from other methods (SUSHI reports).
 - [ ] As a bibliometrician, I would like the collected usage stats were available via the Datacite GraphQL API to run my data analysis in Jupiter notebooks and scripts.
-- [ ] As a repository admin, I would like to have access to Fabrica's usage tracking directly, so I have a quick overview of the Usage when administrating my DOIs.
 
 ### IMPORTANT
 
