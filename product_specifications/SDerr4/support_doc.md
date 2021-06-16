@@ -1,11 +1,11 @@
 
-## API Versioning at DataCite
+# API Versioning at DataCite
 
 API versioning allows Datacite to continuously evolve the platform while offering third-party developers a predictable path for feature upgrades and deprecations.
 
 To ensure you always know about upcoming API changes, follow the Changelog and always keep your contact information up to date.
 
-## Versioned vs. unversioned APIs
+## Versioned vs. unversioned APIs
 
 Versioned APIs	
 
@@ -20,7 +20,7 @@ Unversioned APIs
 
 ## Release schedule
 
-Datacite releases a new API version only when is deemen stricly necessary.
+Datacite releases a new API version only when is deemed strictly necessary.
 
 Each stable version is supported for a minimum of 12 months. When a new stable version is introduced and contains changes that affect your app, you have 18 months to test and migrate your app to the new version before support for the previous version is set for deprecation. All deprecation introduction would be announced in the DataCite Newsletter and/or DataCite Open Hours.
 We strongly recommend updating your apps to call the latest stable API version. 
@@ -43,7 +43,7 @@ There are several supported versions of the APIs available, and you specify the 
 
 ### Release candidates
 
-Release candidates let you see what changes are scheduled for release in the next stable version so that you can begin updating your app as early as possible. All release candiates are to be used at it as it and at the user risk.
+Release candidates let you see what changes are scheduled for release in the next stable version so that you can begin updating your app as early as possible. All release candidates are to be used at it as it and at the user risk.
 
 Both backwards-incompatible and backwards-compatible changes can be added to the `release candidate` so that they’re available to you ahead of the stable release. For this reason, we recommend that you don’t use release candidates in **production**.
 
@@ -64,7 +64,7 @@ Part of a Datacite API can be deprecated if it becomes unnecessary, unsafe, or o
 
 When Datacite starts the deprecation process a resource or a property of a resource in the REST API, the change is communicated in one or more of the following ways:
 
-- There would be announcment in Open Hours and the Newsletter.
+- There would be announcement in Open Hours and the Newsletter.
 - The API reference documentation will mention the deprecated reason.
 - Calls that include the deprecated behaviour return the response header `X-Datacite-API-Deprecated-Reason` and a link to get more information:
 
