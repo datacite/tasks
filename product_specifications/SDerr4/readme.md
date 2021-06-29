@@ -1,4 +1,4 @@
-# Public REST Versioning Strategy 
+# Public REST Versioning Strategy and Version 3
 
 ## Problem
 
@@ -67,6 +67,15 @@ Feature: Depraction of Endpoints in V3
             When a API call is made to /v3/clients or /v3/users or /v3/providers or /v3/memberss
             Then the API reponse be 404 should include the message "The resource you are looking for doesn't exist."
 
+Feature: Depraction of Endpoints in V2
+
+        Scenario: API user goes to /clients or /users or /providers or /members endpoint 
+            Given that a API call is made to /v3/clients or /v3/users or /v3/providers or /v3/members
+            When a API call is made to /v3/clients or /v3/users or /v3/providers or /v3/memberss
+            Then the API reponse be 404 should include the message "The resource you are looking for doesn't exist."
+            And the API reponse should include the custom header "X-Datacite-API-Deprecated-Reason" with the value "https://github.com/datacite/lupo/blob/main/CHANGELOG.md#New-schema"
+
+
 Feature: DOI Endpoints for V3
 
         Scenario: Retrieve DOI metadata
@@ -75,11 +84,14 @@ Feature: DOI Endpoints for V3
             Then the API reponse  won’t show “container” property
             And the API reponse would show the “Related item” property 
             And the API reponse would show the other schema 4.4 properties
+            And the API reponse should include the custom header "X-Datacite-API-Release-Candiate" with the value "https://github.com/datacite/lupo/blob/main/CHANGELOG.md#New-schema"
 
         Scenario: API user goes to /v3/dois (collection) endpoint
             Given that a API call is made to /dois (collection)
             When a API call is made to /dois (collection)
             Then the API reponse should not include aggregations
+            And the API reponse should include the custom header "X-Datacite-API-Release-Candiate" with the value "https://github.com/datacite/lupo/blob/main/CHANGELOG.md#New-schema"
+
 
 ````
 

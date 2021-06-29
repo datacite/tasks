@@ -60,7 +60,7 @@ Calls that include the release candidate behaviour return the response header `X
 Part of a Datacite API can be deprecated if it becomes unnecessary, unsafe, or outdated. It's marked as deprecated when it's removed in a newer version of the API. The deprecation is then retroactively applied to previous stable versions of the API. When a deprecation is introduced, any further details and any relevant migration information is announced in the developer [changelog]("https://github.com/datacite/lupo/blob/main/CHANGELOG.md").
 
 
-> Caution: If you use the Datacite API in a standalone app that requires updates, such as a desktop app or mobile app, then your users will need to update before the upgrade deadline to ensure their app continues working. This might mean you’ll have to update well ahead of the migration deadline, so that your merchants then have time to update their apps. Any calls to unsupported resources could result in your app being delisted or merchants being warned about or blocked from installing your app.
+> Caution: If you use the Datacite API in a standalone app that requires updates, such as a desktop app or mobile app, then your users will need to update before the upgrade deadline to ensure their app continues working. This might mean you’ll have to update well ahead of the migration deadline, so that your integrators then have time to update their apps. 
 
 When Datacite starts the deprecation process a resource or a property of a resource in the REST API, the change is communicated in one or more of the following ways:
 
