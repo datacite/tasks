@@ -45,6 +45,8 @@ Feature: Trigger URL migration
         Scenario: Migrating URLs and with malformed CSV
             Given that the user is logged as client_admin
             And the CSV file is malformed
+            When the user enters the CSV into the box or uploads it
+            Then a warming message should appear in the screen: "CSV malformmed"
 
         Scenario: Migrating URLs of DOIs that do not belong to the client
             Given that the user is logged as client_admin
@@ -55,15 +57,13 @@ Feature: Trigger URL migration
             And a message should be displaty saying: "n DOIs are being updated"
 
 
-
-
-
-Feature: Trigger Domain migration
+Feature: Trigger Macth and Replace URLs
 
         Scenario: Migrating URLs 
             Given that the user is logged as client_admin
-            And he has clicked Migrate Domain button 
+            And he has clicked Migrate Macth and Replace URLs button 
             And he has entered a URL that he wants to migrate from
+            And URL domain is a valid  from the repositories's domain list
             And there are DOIs which URLs `start with` the URL the user wants to migrate from
             And the user has entered the URL he wants to migrate to
             When the user clicks migrate
@@ -75,14 +75,15 @@ Feature: Trigger Domain migration
             Given that the user is logged as client_admin
             And he has clicked Migrate Domain button 
             And he has entered a URL that he wants to migrate from
+            And URL domain is a valid  from the repositories's domain list
             And there are DOIs which URLs `start with` the URL the user wants to migrate from
             When the user has entered the URL he wants to migrate to
             Then the example area would diplay a match and replace example of the migrations using the first DOI's URL that matches the URL to migrate from
             And a message with the number of DOIs to be affected should be displayed
 
-Feature: Domain migration match and replace
+Feature: Macth and Replace URLs
 
-        Scenario: Executing a succesllful Domain migration
+        Scenario: Executing a succesllful Macth and Replace URLs
             Given that there are DOIs with URLs that match the part the user wants to migrate
             And that part is not only the url scheme (e.g. "http" or "ftp")
             Then a background job should be trigger to modify all the DOIs of the client whose URLs match with the URL the user wanted to migrate from
