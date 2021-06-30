@@ -95,6 +95,8 @@ Feature: Macth and Replace URLs
 
 - As an repository admin, I would this feature to only be available to repository admins (client_admin), so that no other user can modify the urls.
 - As a Datacite user, I would like that the CSV processing would reject any input values that start with: +, -, =, and @ so that we can avoid any CSV injection problems.
+- As a product designer, I would that the button elements of both features had an ID, so that we can monitor its used in the analytics platform.
+
 
 
 ## Feature Flag
