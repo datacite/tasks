@@ -92,8 +92,8 @@ Feature: Domain migration match and replace
 
 ## Non Functional Requirements
 
-- As an product desginer, I would this feature to only be available to repository admins (client_admin), so that no other user can modify the urls.
-- As a product designer, I would like that the CSV processing would reject any input values that start with: +, -, =, and @ so that we can avoid any CSV injection problems.
+- As an repository admin, I would this feature to only be available to repository admins (client_admin), so that no other user can modify the urls.
+- As a Datacite user, I would like that the CSV processing would reject any input values that start with: +, -, =, and @ so that we can avoid any CSV injection problems.
 
 
 ## Feature Flag
