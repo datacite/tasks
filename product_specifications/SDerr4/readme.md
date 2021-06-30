@@ -23,6 +23,8 @@ For Deprecation
   - /works
   - /clients
   - /users
+  - providers
+  - members
 
 ## User Stories
 
@@ -70,8 +72,8 @@ Feature: Depraction of Endpoints in V3
 Feature: Depraction of Endpoints in V2
 
         Scenario: API user goes to /clients or /users or /providers or /members endpoint 
-            Given that a API call is made to /v3/clients or /v3/users or /v3/providers or /v3/members
-            When a API call is made to /v3/clients or /v3/users or /v3/providers or /v3/memberss
+            Given that a API call is made to /clients or /users or /providers or /members
+            When a API call is made to /clients or /users or /providers or /memberss
             Then the API reponse be 404 should include the message "The resource you are looking for doesn't exist."
             And the API reponse should include the custom header "X-Datacite-API-Deprecated-Reason" with the value "https://github.com/datacite/lupo/blob/main/CHANGELOG.md#New-schema"
 

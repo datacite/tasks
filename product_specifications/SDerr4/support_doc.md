@@ -24,7 +24,7 @@ Datacite releases a new API version only when is deemed strictly necessary.
 
 Each stable version is supported for a minimum of 12 months. When a new stable version is introduced and contains changes that affect your app, you have 18 months to test and migrate your app to the new version before support for the previous version is set for deprecation. All deprecation introduction would be announced in the DataCite Newsletter and/or DataCite Open Hours.
 We strongly recommend updating your apps to call the latest stable API version. 
-If your request doesn't include a version, then the API also defaults to the oldest supported stable version. 
+If your request doesn't include a version, then the API also defaults to the lastest stable version. 
 
 ## Calling an API version
 
@@ -38,7 +38,7 @@ REST DOIs API URL: /v3/dois/10.2323/102
 REST DOIs (collection) API URL: /v3/dois
 
 
-There are several supported versions of the APIs available, and you specify the version that you want to use by substituting the version name in the URL. There are three types of API versions: `stable`, `release candidate`, and `unsupported`.
+There are several supported versions of the APIs available, and you specify the version that you want to use by substituting the version name in the URL. There are three types of API versions: `stable`, `release candidate`, and `deprecated`.
 
 
 ### Release candidates
