@@ -23,10 +23,12 @@ Solution Validation: [We run a feedback session with potentially interested user
 ### CRITICAL
 
 - [ ] As a repository admin, I would like to be able to migrate URLs of my DOIs from fabrica in BULK, so I don't have to rely on developers to perform this task.
+- [ ] As a repository admin, I would like that the CSV upload were able to check the URLs values, so that I don't submit a CSV with wrong Urls
 
 ### NICE TO HAVE
 
 - [ ] As a repository admin, I would like to be able to request URLs migration that include subdomians, domains, paths, document, parameters and http protocols.
+- [ ] As a repository admin, I would like to be able to obtain a CSV file with the DOIs and their URLs, so that can ease my work when updating URLS
 
 
 ### Detailed User Stories
