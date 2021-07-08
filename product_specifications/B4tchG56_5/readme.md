@@ -65,7 +65,7 @@ Feature: Validate CSV file
             And message saying the "You are trying to migrate to a URL with forbidden domains by your Repository adminitrators. Visit the setting page." shoul be displayed
             And the inut box should be highledgted with an error color.
 
-        Scenario: Migrating URLs and with malformed CSV
+        Scenario: Validate the malformed CSV before sending it  
             Given that the user is logged as client_admin
             And the CSV file is malformed
             When the user enters the CSV into the box or uploads it
@@ -114,6 +114,16 @@ Feature: Macth and Replace URLs
             Then a background job should be trigger to modify all the DOIs of the client whose URLs match with the URL the user wanted to migrate from
 
 
+Feature: Notification
+
+        Scenario: after a bulk update notification
+            Given that 
+            When a bulk update has been triggered by either URL migration or Match or replace
+            Then an email notification should be sent to the repository contact
+            And an email notification should be sent to the related provider service contact
+            And the email notification should follow the bulk update notification template
+
+
 ```
 
 
@@ -135,7 +145,7 @@ Once we've confirmed the feature is deemed stable, we remove the feature flag to
 Most the functionality is already implemented in the CLI client https://github.com/datacite/cirneco
 
 
-## how to obtain CSV file with 
+## how to obtain CSV file with ?
 
 
 This fucntionality already exist in the metadata using MIME types.
@@ -145,3 +155,23 @@ This fucntionality already exist in the metadata using MIME types.
 > Host: api.datacite.org
 > accept: text/csv
 ```
+
+## how to validate CSV upload ?
+
+
+There are a number of packages that provide CSV validation:
+
+- https://www.npmjs.com/package/csv-file-validator
+- https://www.npmjs.com/package/csv-validator
+
+
+## Email notification template
+
+To: {repository.contact} 
+CC: {provider.service_contact} 
+Subject: URL Bulk update triggered by {client.symbol}
+
+Body:
+
+{client.symbol} has triggered a BULK URL update that will modify {n} DOIs.
+
