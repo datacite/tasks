@@ -126,14 +126,11 @@ Feature: Notification
 
 ```
 
-
 ## Non Functional Requirements
 
 - As an repository admin, I would this feature to only be available to repository admins (client_admin), so that no other user can modify the urls.
 - As a Datacite user, I would like that the CSV processing would reject any input values that start with: +, -, =, and @ so that we can avoid any CSV injection problems.
 - As a product designer, I would that the button elements of both features had an ID, so that we can monitor its used in the analytics platform.
-
-
 
 ## Feature Flag
 
@@ -145,7 +142,7 @@ Once we've confirmed the feature is deemed stable, we remove the feature flag to
 Most the functionality is already implemented in the CLI client https://github.com/datacite/cirneco
 
 
-## how to obtain CSV file with ?
+### how to obtain CSV file with ?
 
 
 This fucntionality already exist in the metadata using MIME types.
@@ -156,7 +153,7 @@ This fucntionality already exist in the metadata using MIME types.
 > accept: text/csv
 ```
 
-## how to validate CSV upload ?
+### how to validate CSV upload ?
 
 
 There are a number of packages that provide CSV validation:
@@ -165,8 +162,13 @@ There are a number of packages that provide CSV validation:
 - https://www.npmjs.com/package/csv-validator
 
 
-## Email notification template
+### Email notification template
 
+
+Where {n} is, either, the number of lines in the CSV file or the number of DOIs that might get affected by the pattern introduced in match and replace.
+
+
+```
 To: {repository.contact} 
 CC: {provider.service_contact} 
 Subject: URL Bulk update triggered by {client.symbol}
@@ -174,4 +176,4 @@ Subject: URL Bulk update triggered by {client.symbol}
 Body:
 
 {client.symbol} has triggered a BULK URL update that will modify {n} DOIs.
-
+```
