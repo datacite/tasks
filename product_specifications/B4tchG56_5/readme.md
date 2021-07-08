@@ -117,7 +117,7 @@ Feature: Macth and Replace URLs
 Feature: Notification
 
         Scenario: after a bulk update notification
-            Given that 
+            Given that the user is logged as client_admin 
             When a bulk update has been triggered by either URL migration or Match or replace
             Then an email notification should be sent to the repository contact
             And an email notification should be sent to the related provider service contact
