@@ -4,7 +4,6 @@ on: issues
 
 jobs:
   checkIssue:
-    if: github.event.label.name == 'definition_of_done'
     name: Check Issue for Incomplete Checklist
     runs-on: ubuntu-latest
     steps:
