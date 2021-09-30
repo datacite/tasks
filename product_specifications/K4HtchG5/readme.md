@@ -2,19 +2,17 @@
 
 ## Problem
 
-DOI Administrators are struggling to make changes to many DOIs at the same time, specifically when they have to make a URL migration. They are currently relying on time consuming manual processes or reaching datacite staff to for help.
+ 
 
-
-Problem validation: [We took information from open survey. The large majority of users only need this feature for url URL migrations](https://docs.google.com/document/d/17spNmeQUstzM13FrWfd4Ja18YzTKfB2v_8DSd51mJSM/edit#). 
+Problem validation: [There is been moderated interest from our members but defientely there is a need of providing something simpler to access metrics.](https://www.figma.com/proto/lvxXKfiyVVvoe3nGvfk9yq/MDC-Dashboard?page-id=762%3A7953&node-id=783%3A9515&scaling=min-zoom). 
 
 ## Solution 
 
-Althought this feature initially encompassed functionality for updating any metadata field, based on the `product validation` feedback we have refocused the scope to only be used on url changes. 
 
 
-WireFrames: [Figma File](https://www.figma.com/file/YYSb7xlL2TvV5MNaRZ8tXR/Batch-Update?node-id=0%3A1)
+WireFrames: [Figma File](https://www.figma.com/proto/lvxXKfiyVVvoe3nGvfk9yq/MDC-Dashboard?page-id=762%3A7953&node-id=783%3A9515&scaling=min-zoom)
 
-Solution Validation: [We run a feedback session with potentially interested user. These, were users that had reached Datacite in the past about processing usage using the code of practice but they found the processing heavy resource intensive for their organisations. The overall feedback is that the solution solved their needs](https://jamboard.google.com/d/1Ptt7IuIhZ4an81RON2pBrh92OnRtUbINe47icM8caSA/viewer?f=0). A few changes were made based o nthe feedback. however, amoung their comments we also discarded a number of features: CSV download (we do not have the capability to perform this for large repositories); more metadata values should be bulk updatable (no use cases were elicaitated); Link checking dois.
+Solution Validation: []().
 
 
 
