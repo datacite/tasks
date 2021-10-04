@@ -2,18 +2,20 @@
 
 ## Problem
 
- 
 
-Problem validation: [There is been moderated interest from our members but defientely there is a need of providing something simpler to access metrics.](https://www.figma.com/proto/lvxXKfiyVVvoe3nGvfk9yq/MDC-Dashboard?page-id=762%3A7953&node-id=783%3A9515&scaling=min-zoom). 
+There has not been a strong acceleration of both researcher and bibliometrics interest in assessing data sharing and data metrics. 
+
+Problem validation: [There is been moderated interest from our members but defientely there is a need of providing something simpler to access metrics.](https://portal.productboard.com/datacite/1-roadmap-2021/c/68-bibliometrics-dashboard?utm_medium=social&utm_source=portal_share). A [survey](https://zenodo.org/record/3476545#.YVrRHUZBxjx) from 2019 shown that Institutional repositories receive more requests for metrics but they cannot expose them due to lack of resourcing.
 
 ## Solution 
 
+To catalyze researcher and bibliometrics interest and work in assessing data sharing and data metrics, DataCite will build a bibliometrics dashboard that visualizes key basic bibliometrics indicators. The dashboard will be publicly accessible, and the underlying data will be available via an open API. This accessibility should allow  any interested bibliometrician or open science researcher to utilize this corpus for their own studies.
 
-
-WireFrames: [Figma File](https://www.figma.com/proto/lvxXKfiyVVvoe3nGvfk9yq/MDC-Dashboard?page-id=762%3A7953&node-id=783%3A9515&scaling=min-zoom)
 
 Solution Validation: []().
 
+
+WireFrames: [Figma File](https://www.figma.com/proto/lvxXKfiyVVvoe3nGvfk9yq/MDC-Dashboard?page-id=762%3A7953&node-id=783%3A9515&scaling=min-zoom)
 
 
 ## User Stories
@@ -248,7 +250,13 @@ Feature: Sources Section
 - As a repository admin, I would like the data to fresh with the previous month of access to the dashboard, so that I can use the data to make reports up to the previous month.
   - In other words data in the dashbaord can be upt-to on 30 days old.
 - As a dashboard user, I expect the dashboard page response time to be under 5 seconds (LCP < 5 for desktop at P90).
- 
+- As a product designer, I would like the following html element to have a ID so that we can track selection in our analytics platform.
+  - toggle element for format widget
+  - selecting elements in the series widget
+  - Export data  button element
+  - Time interval widget toogle element
+  - Sources selection toggle element
+
 
 ## Feature Flag
 
