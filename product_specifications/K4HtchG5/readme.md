@@ -12,7 +12,7 @@ Problem validation: [There is been moderated interest from our members but defie
 To catalyze researcher and bibliometrics interest and work in assessing data sharing and data metrics, DataCite will build a bibliometrics dashboard that visualizes key basic bibliometrics indicators. The dashboard will be publicly accessible, and the underlying data will be available via an open API. This accessibility should allow  any interested bibliometrician or open science researcher to utilize this corpus for their own studies.
 
 
-Solution Validation: []().
+Solution Validation: We had two different [validation session](https://jamboard.google.com/d/1570Iyedc2KCawhfvEPninaxQm3NwOL6j3AlZCWG6YGk/viewer) with successulf results. Comments about two additiona lfeatures were collected. First, display of aggregated counts with missing metadata; this has been included in the initial spec. And second, [display metrics as ratios](https://jamboard.google.com/d/1DGVljRNH9WGbxX7TIBqjAEpeK54GdTpwlPh3ms4oGbk/viewer). This seconds feature is to be considerer in other releases.
 
 
 WireFrames: [Figma File](https://www.figma.com/proto/lvxXKfiyVVvoe3nGvfk9yq/MDC-Dashboard?page-id=762%3A7953&node-id=783%3A9515&scaling=min-zoom)
@@ -27,6 +27,7 @@ WireFrames: [Figma File](https://www.figma.com/proto/lvxXKfiyVVvoe3nGvfk9yq/MDC-
 - As a repository admin, I would like a way to select the entities to be presented in the visualisations, so I can see only the information that is important to me.
 - As a repository admin, I would like to be able to export/display data from charts in a tabular form, so I can reuse it to make other analysis or vizulisations.
 - As a dashboard user, I would like the dashboard to present tooltips on hovering, so I can get acces to data that might not be clear for the visuzliation itself.
+- As a bibliometrician, I would like the dashboard to present aggregations of missing values for categories, so I can get a transparent view of the ratios of full metadata.
 
 
 ### Detailed User Stories
@@ -186,6 +187,22 @@ Feature: DOI Qty. categorisation Horizontal stacked chart bar
             And on hover the chart display a tooltip with the DOI qty Count
             And the chart display should display ten categories on the Y-axis
 
+        Scenario: Display aggregated counts even for missing values
+            Given that user is a dashboard page
+            When the user select a filtering that provides results/hits in the chart
+            And some of the aggregated results do not include metadata for the chart category
+            Then the chart should display display a bar to aggregate all the aggregated results that are missing
+            And the bar should be labeled as "Missing"
+            And the bar should be colored in gray
+
+        Scenario: Display aggregated counts for categories that are not in the top 10
+            Given that user is a dashboard page
+            When the user select a filtering that provides results/hits in the chart
+            And some of the aggregated results include more than 10 categories
+            Then the chart should display display a bar to aggregate all "other" categories that are not in the top 10 into the same bar
+            And the bar should be labeled as "Other"
+            And the bar should be colored in gray
+
 
 Feature: Metrics Qty. categorisation Horizontal stacked chart bar
 
@@ -209,10 +226,25 @@ Feature: Metrics Qty. categorisation Horizontal stacked chart bar
             And on hover the chart display a tooltip with the Metrics qty Count
             And the chart display should display ten categories on the Y-axis
 
+        Scenario: Display aggregated Metrics Counts even for missing values
+            Given that user is a dashboard page
+            When the user select a filtering that provides results/hits in the chart
+            And some of the aggregated results do not include metadata for the chart category
+            Then the chart should display display a bar to aggregate all the aggregated results that are missing
+            And the bar should be labeled as "Missing"
+            And the bar should be colored in gray
+
+        Scenario: Display aggregated Metrics Counts for categories that are not in the top 10
+            Given that user is a dashboard page
+            When the user select a filtering that provides results/hits in the chart
+            And some of the aggregated results include more than 10 categories
+            Then the chart should display display a bar to aggregate all "other" categories that are not in the top 10 into the same bar
+            And the bar should be labeled as "Other"
+            And the bar should be colored in gray
 
 Feature: Sources Section
 
-        Scenario: Display Citations/Views/Downloads dashbaord
+        Scenario: Display Citations/Views/Downloads dashboard
             Given that user is a dashboard page
             And the current filter query returns at least 1 works with at least 1 citation/view/download
             And the "citations/views/downloads" pill is not disabled
@@ -228,7 +260,7 @@ Feature: Sources Section
             And the dashboard should render the total works counter
 
 
-        Scenario: Display Works dashbaord
+        Scenario: Display Works dashboard
             Given that user is a dashboard page
             And the current filter query returns at least 1 works with at least 1 citation/view/download
             And the "Works" pill is not disabled
@@ -243,12 +275,45 @@ Feature: Sources Section
             And the dashboard should render the total works counter
 
 
+Feature: Link to works
+
+       Scenario: Click on Link to work when the citations pill is selected
+            Given that user is a dashboard page
+            When the user clicks the link to work at the bottom of the dashboard
+            Then the user is redirected to a Works result list page
+            And the list must be filtered by all the works that have at least 1 citation count
+            And the list must be filtered by the query period selected in the Time interval widget
+            And the list must be filtered by the query entities selected in the Series Widget
+
+       Scenario: Click on Link to work when the views pill is selected
+            Given that user is a dashboard page
+            When the user clicks the link to work at the bottom of the dashboard
+            Then the user is redirected to a Works result list page
+            And the list must be filtered by all the works that have at least 1 view count
+            And the list must be filtered by the query period selected in the Time interval widget
+            And the list must be filtered by the query entities selected in the Series Widget
+
+       Scenario: Click on Link to work when the downloads pill is selected
+            Given that user is a dashboard page
+            When the user clicks the link to work at the bottom of the dashboard
+            Then the user is redirected to a Works result list page
+            And the list must be filtered by all the works that have at least 1 download count
+            And the list must be filtered by the query period selected in the Time interval widget
+            And the list must be filtered by the query entities selected in the Series Widget
+
+       Scenario: Click on Link to work when the works pill is selected
+            Given that user is a dashboard page
+            When the user clicks the link to work at the bottom of the dashboard
+            Then the user is redirected to a Works result list page
+            And the list must be filtered by the query period selected in the Time interval widget
+            And the list must be filtered by the query entities selected in the Series Widget
+
 ```
 
 ## Non Functional Requirements
 
 - As a repository admin, I would like the data to fresh with the previous month of access to the dashboard, so that I can use the data to make reports up to the previous month.
-  - In other words data in the dashbaord can be upt-to on 30 days old.
+  - In other words data in the dashboard can be upt-to on 30 days old.
 - As a dashboard user, I expect the dashboard page response time to be under 5 seconds (LCP < 5 for desktop at P90).
 - As a product designer, I would like the following html element to have a ID so that we can track selection in our analytics platform.
   - toggle element for format widget
@@ -256,11 +321,11 @@ Feature: Sources Section
   - Export data  button element
   - Time interval widget toogle element
   - Sources selection toggle element
-
+  - link to works
 
 ## Feature Flag
 
-This feature is implemented behind the `bilbiometrics-dashbaord` feature flag and disabled by default.
+This feature is implemented behind the `bilbiometrics-dashboard` feature flag and disabled by default.
 Once we've confirmed the feature is deemed stable, we remove the feature flag to publish the feature as GA.
 
 ## Technical Feasibility
@@ -281,7 +346,73 @@ Example in [kibana](https://localhost:9200/_plugin/kibana/app/kibana#/visualize/
 https://medium.com/hepsiburadatech/how-to-create-faceted-filtered-search-with-elasticsearch-75e2fc9a1ae3
 
 
-### How to a data for the stacked bar chart?
+
+### How to show missing and others bucket?
+
+```json
+
+
+
+{
+  "aggs": {
+    "other-filter": {
+      "filters": {
+        "filters": {
+          "": {
+            "bool": {
+              "must": [
+                {
+                  "exists": {
+                    "field": "contributors.nameIdentifiers.nameIdentifier"
+                  }
+                }
+              ],
+              "filter": [],
+              "should": [],
+              "must_not": [
+                {
+                  "match_phrase": {
+                    "contributors.nameIdentifiers.nameIdentifier": {
+                      "query": "http://www.viaf.org130344669"
+                    }
+                  }
+                },
+                {
+                  "match_phrase": {
+                    "contributors.nameIdentifiers.nameIdentifier": {
+                      "query": "https://orcid.org/0000-0002-8635-8390"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  
+  missing
+  
+  {
+  "aggs": {
+    "2": {
+      "terms": {
+        "field": "contributors.nameIdentifiers.nameIdentifier",
+        "size": 3,
+        "order": {
+          "_count": "desc"
+        },
+        "missing": "__missing__"
+      }
+    }
+  },
+
+
+```
+
+### How to plot a data for the stacked bar chart?
 
 One could use a nested aggergation.
 
