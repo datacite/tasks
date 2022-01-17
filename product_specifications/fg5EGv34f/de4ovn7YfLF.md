@@ -113,9 +113,21 @@ Feature: Render LAtex Formulas correctly
              When the user visit a page with the DOI metadata 
              Then the the page should render  Latex math syntax metadata correctly
 
+Feature: Add terms to controlled vocabularies
 
+        Scenario: User is updating/adding repository software
+            Given the user is editing/creating a repository
+              And the user is opening the dropdown menu for the software
+             When the dropdown is openned
+             Then the dropdown vocabulary should include "OPUS" as a selecteable option
+              And the dropdown vocabulary should include "Pubman" as a selecteable option
 
-             OPUS 4" and "PubMan"
+        Scenario: User is updating/adding member organisation type
+            Given the user is editing/creating member
+              And the user is opening the dropdown menu for the organisation type
+             When the dropdown is openned
+             Then the dropdown vocabulary should include "International Organization" as a selecteable option
+
 
 Feature: Remove Profile pages from Fabrica
 
