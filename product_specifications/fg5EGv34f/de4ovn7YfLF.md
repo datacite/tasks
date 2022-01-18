@@ -144,7 +144,6 @@ Feature: Remove Profile pages from Fabrica
 ```
 
 
-https://doi.datacite.org/users/0000-0003-3484-6875
 
 
 
