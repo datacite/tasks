@@ -119,13 +119,78 @@ Feature: Adding relatedItem information to a new DOI in Fabrica
               And the user would be able to add the 'creatorName' sub-property for 'relatedItem', but not other 'creator' subproperties
               And the user would be able to add the 'contributorName'  and 'contributorType' sub-property for 'relatedItem', but not other 'contributor' subproperties
 
+
+Feature: Formatting metadata using new RelatedItem
+
+        Scenario: User wants to get metadata formatted using a Citation Style
+            Given that user requested DOI metadata in a specific Citation Style via any service (CN, Commons, Fabrica, Citations, Boglonese)
+             When the DOI metadata in schema 4.4 or above
+              And there are no descriptions with descriptionType "SeriesInformation"
+              And there is at least one 'realtedItem' with 'relationType' equals "IsPublishedIn"
+             Then the service must use the 'volume' sub-property from 'relatedItem' to generate the correct formatted citation 
+              And the service must use the 'issue' sub-property from 'relatedItem' to generate the correct formatted citation 
+              And the service must use the 'title' sub-property from 'relatedItem' to generate the correct formatted citation 
+              And the service must use the 'number' sub-property from 'relatedItem' to generate the correct formatted citation 
+              And the service must use the 'firstpage' sub-property from 'relatedItem' to generate the correct formatted citation 
+              And the service must use the 'lastpage' sub-property from 'relatedItem' to generate the correct formatted citation 
+              And the service must use the 'edition' sub-property from 'relatedItem' to generate the correct formatted citation
+              And return a formatted citation using the specified style
+ 
+ https://github.com/datacite/bolognese/blob/8cda2a685d65c32710b4a1b42a2a3f64dbed8e70/lib/bolognese/utils.rb#L1193
+
+
+
 Feature: GraphQl query support
 
         Scenario: A user request DMPs in a query
             Given that user makes a query for DataManagementPlan in Graphql
              When the API is requesting DOIs 
-             Then the queyr should use the filter with the new resourceTypeGeneral
+             Then the query should return all DOIs with the resourceTypeGeneral 'OutPutManagementPlan'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'Data Management Plan'
 
+        Scenario: A user request Preprints in a query
+            Given that user makes a query for PrePrint in Graphql
+             When the API is requesting DOIs 
+             Then the query should return all DOIs with the resourceTypeGeneral 'Preprints'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'Preprints'
+
+        Scenario: A user request PeerReviews in a query
+            Given that user makes a query for PeerReview in Graphql
+             When the API is requesting DOIs 
+             Then the query should return all DOIs with the resourceTypeGeneral 'PeerReview'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'Peer review'
+
+        Scenario: A user request ConferencePapers in a query
+            Given that user makes a query for DataManagementPlan in Graphql
+             When the API is requesting DOIs 
+             Then the query should return all DOIs with the resourceTypeGeneral 'ConferencePaper'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'Conference paper'
+
+        Scenario: A user request BookChapters in a query
+            Given that user makes a query for BookChapters in Graphql
+             When the API is requesting DOIs 
+             Then the query should return all DOIs with the resourceTypeGeneral 'BookChapter'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'BookChapter'
+
+        Scenario: A user request Books in a query
+            Given that user makes a query for Books in Graphql
+             When the API is requesting DOIs 
+             Then the query should return all DOIs with the resourceTypeGeneral 'Book'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'Book'
+
+        Scenario: A user request JournalArticles in a query
+            Given that user makes a query for JournalArticles in Graphql
+             When the API is requesting DOIs 
+             Then the query should return all DOIs with the resourceTypeGeneral 'JournalArticle'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'JournalArticle'
+
+        Scenario: A user request Dissertations in a query
+            Given that user makes a query for Dissertations in Graphql
+             When the API is requesting DOIs 
+             Then the query should return all DOIs with the resourceTypeGeneral 'Dissertation'
+             And  the query should return all DOIs with the resourceTypeGeneral 'Text' and  resourceType 'Dissertation,Thesis'
+
+https://github.com/datacite/lupo/blob/0927465cbfcfb70644cc47da94de1a7acebce5aa/app/graphql/types/query_type.rb#L876
 
 
 ```
