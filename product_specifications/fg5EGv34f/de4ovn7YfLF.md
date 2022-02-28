@@ -55,7 +55,9 @@ Feature: Autosuggest input Format
              When the he user is entering data in the Format input
              Then the input field should suggest format based on the inputed data
               And the suggested values should be based on the IANA media types https://www.iana.org/assignments/media-types/media-types.xhtml
-              and the Format input help test should read: "The default format scheme is provided by the IANA Media Types. https://www.iana.org/assignments/media-types/media-types.xhtml"
+              And the Format input help test should read: "The default format scheme is provided by the IANA Media Types. https://www.iana.org/assignments/media-types/media-types.xhtml"
+              And the Format input help test should read: "The default format scheme is provided by the IANA Media Types. https://www.iana.org/assignments/media-types/media-types.xhtml"
+              And the suggestion message in the input should read "Search standard licenses OR create a new license"
 
         Scenario: Selecting Format using auto suggest
             Given that the user is in the DOI form
@@ -92,12 +94,33 @@ Feature: DOIs List sorting
               And when selecting "Sort alphabethically"
              Then the DOI list should be sorted by its first title.
 
-Feature: New Logo
+Feature: Export query results metadata
 
-        Scenario: user goes to Fabrica
+        Scenario: Visit the DOI List page
+            Given that there are DOIs in the List
+             When the user clicks on the Export basic DOI metadata
+             Then Fabrica will make a call to the DOI API to get the metadata to export the basic DOI metadata of the DOIs in the page in csv format.
+              And the browsers will return a CSV file donwloaded
+              And the CSV file should contain the basic metadata of the DOIs in the result list
+
+Feature: New Navigation bar
+
+        Scenario: user goes to Fabrica as repository admin or staff
             Given user visit Fabrica
              When visiting any fabrica page
              Then the new Fabrica Logo should appear instead of the "Datacite Fabrica" title
+
+        Scenario: user goes to Fabrica as consortium lead admin
+            Given user visit Fabrica
+             When visiting any fabrica page
+             Then the new Fabrica Logo should appear instead of the "Datacite Fabrica" title
+              And the navigation bar should have background in Primary dark blue color (#243B54)
+
+        Scenario: user goes to Fabrica as consortium organisation or member admin
+            Given user visit Fabrica
+             When visiting any fabrica page
+             Then the new Fabrica Logo should appear instead of the "Datacite Fabrica" title
+              And the navigation bar should have background in Primary light blue color (#00B1E2)
 
 Feature: Register DOIs into the future
 
@@ -121,6 +144,7 @@ Feature: Add terms to controlled vocabularies
              When the dropdown is openned
              Then the dropdown vocabulary should include "OPUS" as a selecteable option
               And the dropdown vocabulary should include "Pubman" as a selecteable option
+              And the dropdown vocabulary should include "MyCoRe" as a selecteable option
 
         Scenario: User is updating/adding member organisation type
             Given the user is editing/creating member
@@ -151,6 +175,8 @@ Feature: Remove Profile pages from Fabrica
 
 - [ ] As a product designer, I would like the following html element to have a ID so that we can track selection in our analytics platform.
  - In the "create new DOI" button
+ - In the "Export basic DOI metadata" button
+ 
 
 
 
