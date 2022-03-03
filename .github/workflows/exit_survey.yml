@@ -8,7 +8,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-  surveySend:
+  survey-send:
     if: github.event.label.name == 'definition_of_done'
     runs-on: ubuntu-latest
     steps:
