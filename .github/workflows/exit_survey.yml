@@ -5,7 +5,7 @@ on:
     types: [closed]
 
 env:
-  GITHUB_TOKEN: {{ secrets.ISSUES_TOKEN }}
+  GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
 
 jobs:
   surveySend:
@@ -15,5 +15,4 @@ jobs:
     steps:
       - uses: jdvr/action-add-comment@master
         with:
-          comment: ':fireworks: Well done @{issue-assignees} this is a wrap! 
-                    Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39.'
+          comment: ':fireworks: Well done @{issue-assignees} this is a wrap! Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39.'
