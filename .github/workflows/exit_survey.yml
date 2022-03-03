@@ -10,7 +10,7 @@ env:
 
 jobs:
   survey-send:
-    if: github.event.label.name == 'definition_of_done'
+    # if: github.event.label.name == 'definition_of_done'
     runs-on: ubuntu-latest
     permissions:
       issues: write
