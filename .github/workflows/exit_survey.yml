@@ -1,20 +1,20 @@
-# name: Exit survey
+name: Exit survey
 
-# on: 
-#   issues:
-#     [closed]
+on: 
+  issues:
+    [closed]
 
-# jobs:
-#   build:
-#     if: ${{ github.event.label.name == 'definition_of_done' }}
-#     checkIssue:
-#       name: Exit survey
-#       runs-on: ubuntu-latest
-#       steps:
-#         - uses: jdvr/action-add-comment@master
-#           with:
-#             comment: ':fireworks: Well done @{issue-assignees} this is a wrap! 
-#                       Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39.'
-#           env:
-#             BUILD_NUMBER: 1234
-#             GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+jobs:
+  build:
+    if: ${{ github.event.label.name == 'definition_of_done' }}
+    checkIssue:
+      name: Exit survey
+      runs-on: ubuntu-latest
+      steps:
+        - uses: jdvr/action-add-comment@master
+          with:
+            comment: ':fireworks: Well done @{issue-assignees} this is a wrap! 
+                      Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39.'
+          env:
+            BUILD_NUMBER: 1234
+            GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
