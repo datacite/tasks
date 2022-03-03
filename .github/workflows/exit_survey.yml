@@ -4,6 +4,9 @@ on:
   issues:
     types: [closed]
 
+env:
+  GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
+
 jobs:
   surveySend:
     name: Exit survey
@@ -14,6 +17,3 @@ jobs:
         with:
           comment: ':fireworks: Well done @{issue-assignees} this is a wrap! 
                     Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39.'
-        env:
-          BUILD_NUMBER: 1234
-          GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
