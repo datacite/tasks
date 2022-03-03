@@ -2,7 +2,7 @@ name: Exit survey
 
 on: 
   issues:
-    [closed]
+    types: [closed]
 
 jobs:
   build:
