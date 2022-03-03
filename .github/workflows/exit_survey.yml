@@ -9,10 +9,12 @@ env:
 
 jobs:
   surveySend:
-    name: Exit survey
+    if: github.event.label.name == 'definition_of_done'
     runs-on: ubuntu-latest
-    if: ${{ github.event.label.name == 'definition_of_done' }}
     steps:
-      - uses: jdvr/action-add-comment@master
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
         with:
-          comment: ':fireworks: Well done @{issue-assignees} this is a wrap! Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39.'
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            :fireworks: Well done @{issue-author} this is a wrap! Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39. :sparkles:
