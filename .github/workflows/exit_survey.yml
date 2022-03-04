@@ -10,7 +10,7 @@ env:
 
 jobs:
   survey-send:
-    # if: github.event.label.name == 'definition_of_done'
+    if: github.event.label.name == 'definition_of_done'
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -19,4 +19,4 @@ jobs:
         uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
         with:
           issue-number: ${{ github.event.issue.number }}
-          body: ':fireworks: Well done @{issue-author} this is a wrap! Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39. :sparkles:'
+          body: ':fireworks: Well done @{issue-author} ${{github.event.pull_request.assignees[0]}} this is a wrap! Could you fill this small retrospective survey https://forms.gle/tUrjLfRrhCB7uQg39. :sparkles:'
