@@ -33,26 +33,26 @@ Detail the user stories providing the acceptance criteria. All user stories are 
 
 Feature: Getting all scholarly outputs linked to an organisation
 
-        Scenario Outline: Getting all scholarly outputs linked to an organisation when creator.nameIdentifier.affiliantionIdentifier equals Organisation's ROR-Id
+        Scenario: Getting all scholarly outputs linked to an organisation when creator.nameIdentifier.affiliantionIdentifier equals Organisation's ROR-Id
 
             Given there exist DOIs with creator.nameIdentifier.affiliantionIdentifier equals Organisation's ROR-Id,
              When that the user is in a Organisation Page
              Then the page should display a list of the  DOIs
 
-        Scenario Outline: Getting all scholarly outputs linked to an organisation when reator.nameIdentifier equals Organisation's ROR-Id
+        Scenario: Getting all scholarly outputs linked to an organisation when reator.nameIdentifier equals Organisation's ROR-Id
 
             Given there exist DOIs with creator.nameIdentifier equals Organisation's ROR-Id,
              When that the user is in a Organisation Page
              Then the page should display a list of the  DOIs
 
-        Scenario Outline: Getting all scholarly outputs linked to an organisation when contributor.nameIdentifier equals Organisation's ROR-Id
+        Scenario: Getting all scholarly outputs linked to an organisation when contributor.nameIdentifier equals Organisation's ROR-Id
 
             Given there exist DOIs with contributor.contributorType equals "Sponsor"
               And with contributor.nameIdentifier equals Organisation's ROR-Id,
              When that the user is in a Organisation Page
              Then the page should display a list of the  DOIs
 
-        Scenario Outline: Getting all scholarly outputs linked to an organisation when contributor.nameIdentifier.affiliantion equals Organisation's ROR-Id,
+        Scenario: Getting all scholarly outputs linked to an organisation when contributor.nameIdentifier.affiliantion equals Organisation's ROR-Id,
 
             Given there exist DOIs with contributor.contributorType equals "Sponsor"
               And with contributor.nameIdentifier.affiliantion equals Organisation's ROR-Id,
@@ -60,7 +60,7 @@ Feature: Getting all scholarly outputs linked to an organisation
              Then the page should display a list of the  DOIs
 
 
-        Scenario Outline: Getting all scholarly outputs linked to a DMP linked to an organisation
+        Scenario: Getting all scholarly outputs linked to a DMP linked to an organisation
 
             Given there exist DOIs with relatedIdentifierType equals "OutputManagementPlan",
               And the relatedIdentifier DMP has contributor.contributorType equals "Sponsor",
@@ -71,7 +71,7 @@ Feature: Getting all scholarly outputs linked to an organisation
 
 Feature: Export all scholarly outputs linked to an organisation
 
-        Scenario Outline: Display Export Menu
+        Scenario: Display Export Menu
 
             Given there exist DOIs linked to an organisation
              When that the user is in a Organisation Page
@@ -79,7 +79,7 @@ Feature: Export all scholarly outputs linked to an organisation
               And the export menu should include a link to download Related Works, Funders and Abstracts link
 
 
-        Scenario Outline: Export as related Works
+        Scenario: Export as related Works
 
             Given there exist DOIs linked to an organisation
              When that the user is in a Organisation Page
@@ -90,7 +90,7 @@ Feature: Export all scholarly outputs linked to an organisation
               And the file should include one scholarly output per line
               And the browser should request the user to download the file
 
-        Scenario Outline: Export as Abstracts
+        Scenario: Export as Abstracts
 
             Given there exist DOIs linked to an organisation
              When that the user is in a Organisation Page
@@ -102,7 +102,7 @@ Feature: Export all scholarly outputs linked to an organisation
               And the browser should request the user to download the file
 
 
-        Scenario Outline: Export as Funders
+        Scenario: Export as Funders
 
             Given there exist DOIs linked to an organisation
              When that the user is in a Organisation Page
@@ -283,18 +283,14 @@ Feature: PIDs force directed network chart
 
 Feature: Metadata Table for DMPs
 
-        Scenario Outline: Display Metadata Table
-            Given there exist DOIs with relatedIdentifierType equals "OutputManagementPlan",
-              And the relatedIdentifier DMP has contributor.contributorType equals "Sponsor",
-              And the relatedIdentifier DMP has contributor.nameIdentifier equals Organisation's ROR-Id,
-             When that the user is in a Organisation Page
-             Then the page should display a list of the  DMPs in the Organisation page
+        Scenario: Display Metadata Table
+
 
 Feature: Download Metadata button
 
-        Scenario Outline: Download Metadata
+        Scenario: Download Metadata
             Given the user is in a DMP Landing search Page
-             When that the user is in the download Metadata button
+             When that the user clicks in the download Metadata button
              Then the a modal should pop up
               And the modal should include links to all the formats in which DMP DOI metadata can be downloaded
 
@@ -314,7 +310,25 @@ Feature: Contributors/Creators Sankey Vizsulisation
               And the chart should highlite the segment of the corresponding segments on hover over the Name-ContributionType segment
               And the chart should highlite the segment of the corresponding segments on hover over the ResourceTypeGeneral-ContributionType segment
 
+Feature: Link Project to DMP
 
+        Scenario: Link a DMP to an affiliated Project in Commons
+            Given the user is in a DMP Landing search Page
+              And the user is authenticated in Commons
+              And the user is ORCID is the creator metadata of the DMP
+             When that the user clicks in the Link to project button
+             Then the a modal should pop up
+              And the modal should include a search box to all projects affiliated to the user
+             When the user select a project
+              And the user clicks link
+             Then then a relationthip isPartOf is created in EventData between the project ID and the DMP ID
+
+        Scenario: Link a DMP to an affiliated Project in Repository
+            Given the user is in a DMP Landing search Page
+             When that the user clicks in the Link to project button
+             Then the a modal should pop up
+              And the modal should include a link to both the Project ID landing page and the DMP landing page
+              And the modal should read "Visit the landing pages and modify the metadata to include a relationship between the DMP and the Project"
 
 
 
