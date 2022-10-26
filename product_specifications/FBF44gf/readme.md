@@ -147,6 +147,7 @@ Feature: Summary Mesures Stats
               And the statistics should include number citations of outputs linked to an organisation
               And the statistics should include number views of outputs linked to an organisation
               And the statistics should include number downloads of outputs linked to an organisation
+              And ther should be a help icon with a link to static page in the support website with help about the measures
 
 Feature: Top authors and contributors list
 
@@ -537,8 +538,6 @@ metadata = DOI.query(dois.pluck(:ids))
 
 persons-events = Event.query(dois: dois.pluck(:ids), citation_type;"Person-ScholalrlyArticle, Person-Dataset")
 
-
-
 ```
 
 ```gpl
@@ -568,4 +567,15 @@ persons-events = Event.query(dois: dois.pluck(:ids), citation_type;"Person-Schol
     }
   }
 }
+```
 
+###  Feasibility Check: 100 Name identifier chart
+
+```ruby
+
+
+dois = All.DOIs.linked to the organisation
+
+persons-events = Event.query(dois: dois.pluck(:ids), citation_type;"Person-ScholalrlyArticle, Person-Dataset")
+
+```
