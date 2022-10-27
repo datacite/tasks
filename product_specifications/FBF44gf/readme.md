@@ -85,9 +85,10 @@ Feature: Export all scholarly outputs linked to an organisation
              When that the user is in a Organisation Page
               And the user clicks on the "Related Works" download link
              Then the a file with all the all scholarly outputs linked to the organisation should be generated
-              And the file should include up to 500 scholarly outputs
+              And the file should include up to 500 scholarly outputs (the most recently published)
               And all the scholarly outputs should be formatted in APA style
               And the file should include one scholarly output per line
+              And the scholarly outputs should be sorted descending by publication year
               And the browser should request the user to download the file
 
         Scenario: Export as Abstracts
@@ -96,9 +97,10 @@ Feature: Export all scholarly outputs linked to an organisation
              When that the user is in a Organisation Page
               And the user clicks on the "Abstract" download link
              Then the a file with all the all scholarly outputs linked to the organisation should be generated
-              And the file should include up to 500 scholarly outputs
+              And the file should include up to 500 scholarly outputs (the most recently published)
               And all the scholarly outputs should be formatted in Title, YoP, DOI, description
               And the file should include one scholarly output per line
+              And the scholarly outputs should be sorted descending by publication year
               And the browser should request the user to download the file
 
 
@@ -108,9 +110,10 @@ Feature: Export all scholarly outputs linked to an organisation
              When that the user is in a Organisation Page
               And the user clicks on the "Funders" download link
              Then the a file with all the all funders linked to the organisation should be generated
-              And the file should include up to 500 funders
+              And the file should include up to 500 funders (the most recently published)
               And all the funders should be formatted in Title, DOI, description
               And the file should include one funder per line
+              And the scholarly outputs should be sorted descending by publication year
               And the browser should request the user to download the file
 
 
