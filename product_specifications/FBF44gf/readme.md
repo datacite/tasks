@@ -1,19 +1,16 @@
 # FAIR Visualisation in Organisation and DMP pages
 
 ## Problem
-
-Development of a dashboard and further extension GraphQL API nodes building on connections made possible via the networked DMP that allows users to track connections between DMPs, investigators, outputs, organizations, research methods and protocols; and display citations throughout the research lifecycle. 
-
-
-We determined that it is crucial that the Dashboard can be used to prepare or directly support grant proposals for the NSF and the FSDs' obligation to provide reports to the Station hosting institution. In terms of granularity, we identified that annual distributions are enough to support reporting. Additionally, it was also indicated that lists of abstracts and total production numbers are the main indicators that are needed for reporting. 
+Administrators of organizations have challenges to demonstrate the impact of their non-traditional scholarly outputs (Datasets, software, protocols, preprints, etc.). Often they have to scavenge for the all scholarly outputs their groups and collaborators have produced. Although many of these non-traditional scholarly outputs have PIDs(DOIs) assigned to them, there are not user-friendly ways to get all of them efficiently for administrators to produce reports that demonstrate the impact of the organizations or projects' work.
 
 
 Problem validation: [A workshop](https://miro.com/app/board/uXjVOZtNNlI=/?share_link_id=611105669245) was carried out to validate the problem. We used a lighting workshop format to identify goals and challenges. Then the data was analyzed in terms of a data visualization framework and user stories were drawn from there. In a secondary call, we sat with all PIs and project leads a prioritized the [user stories](https://docs.google.com/document/d/1lJ6J-OuKiVSMTR_AoEVg_LirjufTBkAwqR4XbPfDQYA/edit).
 
+We determined that it is crucial that the solution can be used to prepare or directly support grant proposals for the NSF and the FSDs' obligation to provide reports to the Station hosting institution. In terms of granularity, we identified that annual distributions are enough to support reporting. Additionally, it was also indicated that lists of abstracts and total production numbers are the main indicators that are needed for reporting. 
 
 ## Solution 
 
-To help administrators of organizations and data management plans in their activities to prepare materials to demonstrate the impact of a collection of work Datacite commons would include a set of features that would allow users to get access to all related content to ROR-ids and DMP-ids. 
+To help administrators of organizations and data management plans in their activities to prepare materials to demonstrate the impact of a collection of work, Datacite commons would include a set of features that would allow users to get access to all related content to a given ROR-id and DMP-id. 
 
 Solution Validation: We conducted two validation sessions:
 1. There was a validation session with end users of [DataCite Commons]()
@@ -210,9 +207,9 @@ Feature: 100% stacked bar chart
 
         Scenario: Displaying information about the charts
             Given that a user request for more information about a chart
-             When the user click on the info icon
-             Then a new window should be open.
-              And the page in the new window should include a static page with info about each graph (support page).
+             When the user hovers on the info icon
+             Then a tooltip should be shown that reads "The field {field} from DOI metadata was used to generate this chart."
+              And the info icon should have a link a static page with info about each graph (support page).
 
         Scenario: Displaying License chart
             Given there exist DOIs linked to an organisation
@@ -282,12 +279,26 @@ Feature: PIDs force directed network chart
               And the chart should show a tooltip in on hover that show PID of the node, and the type of PID
               And the chart should show up to 100 nodes.
 
+        Scenario: Displaying help in the PIDs force directed network chart
+            Given there a PIDs force directed network chart is being shown
+            When the user hovers over the info-icon
+            Then a tooltip should be displayed that reads "Not all nodes connected to this organisation are shown. Only 100 nodes are being shown"
+            And the info-icon should have a link to the support pages
 
 
 Feature: Metadata Table for DMPs
 
         Scenario: Display Metadata Table
-
+            Given the user is in a DMP Landing search Page
+             Then the DOI metadata should be displayed in table format
+              And there should be a tab for description metadata
+              And there should be a tab for  Other Identifiers Metadata
+              And there should be a tab for Creators
+              And the Creators metadata should be shown in a table format
+              And there should be a tab for Contributors
+              And the Contributors metadata should be shown in a table format
+              And there should be a tab for Funders metadata
+              And there should be a Tab Registration Agency metadata
 
 Feature: Download Metadata button
 
@@ -312,6 +323,13 @@ Feature: Contributors/Creators Sankey Vizsulisation
               And the chart should show a tooltip in on hover over the segment connections that number of connections and the category
               And the chart should highlite the segment of the corresponding segments on hover over the Name-ContributionType segment
               And the chart should highlite the segment of the corresponding segments on hover over the ResourceTypeGeneral-ContributionType segment
+
+        Scenario: Displaying help in the Sankey Vizsulisation
+            Given there a Sankey Vizsulisation is being shown
+            When the user hovers over the info-icon
+            Then a tooltip should be displayed that reads "Connections data comes from Event Data service."
+            And the info-icon should have a link to the support pages
+
 
 Feature: Link Project to DMP
 
