@@ -1,3 +1,28 @@
+# IGSN Reporting
+
+## Problem
+
+Datacite's ED needs to do reliable reporting about adoption of IGSN during (organisation and PIDs) the length period of the grant, distributed over months, for Sloan reporting. 
+
+Problem validation: [This is a grant requirement and its foreseen to be used only by DataCite's ED](https://docs.google.com/document/d/1IZRuAFlr6Jyh-P1Rn-7Le6fyUVynmoRRFRxYEWtZJbo/edit). 
+
+## Solution 
+
+Although this feature initially encompassed functionality for updating any metadata field, based on the `product validation` feedback we have refocused the scope to only be used on url changes. 
+
+
+WireFrames: N/A
+
+Solution Validation: 
+
+
+### User stories and Acceptance Criteria
+
+User stories. All user stories are ordered by priority. 
+
+
+```cucumber
+
 
 Feature: Repository exclusive for IGSN-DOIs
 
@@ -77,13 +102,9 @@ Feature: Creating report of IGSN-DOIs
              When the user facets by authority "IGSN.org"
              Then Fabrica should return a set of DOI metadata from IGSN-DOIs.
 
-        Scenario: Displaying the IGSN reports in a graphical manner
-            Given that the user is a needs to generate a report
-             When the user request to generate a IGSN report.
-             Then the report should include the total count of IGSN-DOIs
-              And the report should include the table/graphical distribution of IGSN-DOIs by month
-              And the report should include the table/graphical distribution of citations to IGSN-DOIs by month
-              And the report should include the table/graphical distribution (top 10) of IGSN-DOIs by DataCite Cliend ID
-              And the report should include the table/graphical distribution (top 10) of IGSN-DOIs by Affiliation
-              And the report should include the table/graphical distribution (top 10) of IGSN-DOIs by License
-              And the report should use exlusively DataCite APIs to retrieve the data.
+
+```
+
+### Non Functional Requirements
+
+- Potentially there will be new types of clients in our data model, hence try to keep the code entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
