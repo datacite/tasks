@@ -17,6 +17,7 @@ assignees: ''
 - [ ] Regressions and bugs are covered (where relevant) with tests that reduce the risk of the issue happening again.
 - [ ] Reviewed by relevant reviewers and all comments are addressed.
 - [ ] Confirmed to be working in the stage environment with no new Sentry errors.
+- [ ] Write an ADR (when relevant).
 - [ ] Confirmed that user stories are met:
     - {user stories}
     - {detailed user stories}
