@@ -10,6 +10,9 @@ assignees: ''
 
 # DOD:
 
+To complete this DOD both the lead developer that code the feature needs to review and validate every item in the "Development checklist" has been completed and its working correctly. Note: automated test are not enough to tell a feature is working correctly. 
+After the "Development checklist" is completed the designer must review and validated every item in "Product Engineering Checklist".
+
 
 ### Development Checklist
 - [ ] Passed through peer review see Pull Request Guidelines
@@ -30,7 +33,5 @@ assignees: ''
 - [ ] Feature Flag has been removed. (where relevant)
 
 
-### Engagement Checklist
-- [ ] Documentation has been updated
-- [ ] Blogpost/newsletter has been written
+
 
