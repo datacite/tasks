@@ -19,7 +19,7 @@ After the "Development checklist" is completed the designer must review and vali
 - [ ] Unit, integration, and system tests that all pass on the CI.
 - [ ] Regressions and bugs are covered (where relevant) with tests that reduce the risk of the issue happening again.
 - [ ] Reviewed by relevant reviewers and all comments are addressed.
-- [ ] Confirmed to be working in the stage environment with no new Sentry errors.
+- [ ] Confirmed to be working in the stage environment with no new [Sentry errors](https://datacite.sentry.io/issues/).
 - [ ] Write an ADR (when relevant).
 - [ ] Confirmed that user stories are met:
     - {user stories}
